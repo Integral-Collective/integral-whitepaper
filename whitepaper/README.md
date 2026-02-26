@@ -13,7 +13,7 @@ The document is organized into chapters and subsystem modules to support targete
 * [Abstract](00-abstract.md)
 * [Introduction](01-introduction.md)
 * [A Human-Level Analogy](02-human-analogy.md)
-* Solution Overview *(coming next)*
+* [What Integral Solves](03-what-integral-solves.md)
 
 ---
 
