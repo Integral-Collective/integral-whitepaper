@@ -178,36 +178,38 @@ def capture_labor_event(
 **Plain-language summary:**
 Only labor that is **(1) authenticated, (2) tied to a real COS operational task, (3) time-sane, and (4) peer-verified** enters ITC. Everything else is rejected or flagged upstream. This ensures ITC credit begins from **trusted operational reality**, not self-reporting or social influence.
 
-**Math Sketch — Validity & Social Necessity Filter**
+### Math Sketch — Validity & Social Necessity Filter
 
 Let each submitted labor claim be a tuple:
-$$
-e = (m, t, h, v)
-$$
+
+(1)  e = (m, t, h, v)
+
 where:
-- $m$ = member ID
-- $t$ = task ID
-- $h$ = claimed hours
-- $v$ = set of verifiers
+
+• m = member ID  
+• t = task ID  
+• h = claimed hours  
+• v = set of verifiers  
 
 Define indicator functions:
-- $A(m)=1$ if member is authenticated, else $0$
-- $O(t)=1$ if task $t$ is operational and registered in COS, else $0$
-- $H(h)=1$ if $0 < h \leq H_{\max}$, else $0$
-- $V(v,m)=1$ if $\exists v_i\in v: v_i\ne m$, else $0$
+
+• A(m) = 1 if member is authenticated, else 0  
+• O(t) = 1 if task t is operational and registered in COS, else 0  
+• H(h) = 1 if 0 < h ≤ H_max, else 0  
+• V(v, m) = 1 if there exists v_i ∈ v such that v_i ≠ m, else 0  
 
 Define overall validity:
-$$
-\text{valid}(e)=A(m)\cdot O(t)\cdot H(h)\cdot V(v,m)
-$$
+
+(2)  valid(e) = A(m) · O(t) · H(h) · V(v, m)
+
 An event is accepted iff:
-$$
-\text{valid}(e)=1
-$$
 
-> **In words:**
->  A labor event enters the ITC system only if it is **authenticated**, **operationally and socially necessary** (linked to COS), **time-sane**, and **peer verified**. Only then can Module 2 interpret and weight it as contribution.
+(3)  valid(e) = 1
 
-------
+Note:
+• H_max represents the configured maximum allowable hours per labor event (e.g., max_hours_per_event = 12), ensuring claims remain within reasonable operational bounds.
+
+In words:
+A labor event enters the ITC system only if it is authenticated, operationally and socially necessary (linked to COS), time-sane (positive and bounded duration), and peer verified. Only then can Module 2 interpret and weight it as contribution.
 
 ------
