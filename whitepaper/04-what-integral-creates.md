@@ -16,7 +16,7 @@ Four mechanisms drive this trajectory:
 As these dynamics compound, fewer labor hours are needed to maintain stable access to essentials, and resource intensity declines across the system. This is the structural basis for Integral’s post-scarcity trajectory: **efficiency and sufficiency emerge from cooperation, open design, cybernetic feedback and true economizing—not from growth, competition, or manufactured demand.**
 
 
-- [What Integral Creates](04-what-integral-creates.md)
+![Integral system diagram](../assets/integral-system-diagram-01.png)
 
 Above Diagram:
 This diagram illustrates how Integral generates a post-scarcity trajectory not by assuming abundance but by systematically reducing the labor and material intensity required to meet essential needs. Four reinforcing mechanisms drive this process. Open Access Design (OAD) continuously improves tools, technologies, and methods across all nodes, reducing the difficulty and resource requirements of production. Cooperative Organization (COS) eliminates redundant effort by coordinating shared designs and distributed workflows, preventing the parallel, competitive duplication found in market systems. Adaptive Feedback (FRS) aligns resources with actual conditions, preventing misallocation and ensuring that production follows real patterns of need rather than price fluctuations or speculative demand. Finally, the fundamental incentive shift—arising from the absence of profit pressures, market share competition, and turnover requirements—removes the structural drivers of waste, planned obsolescence, and unnecessary throughput.
@@ -80,8 +80,7 @@ These signals converge through a transparent and adaptive valuation process that
 The result is a cybernetically coherent mode of economic coordination—one capable of aligning production and distribution with actual human needs and planetary boundaries. Integral performs the very task that market theorists claim prices achieve but empirically fail to deliver: **true economic calculation grounded in reality rather than exchange.**
 
 
-
-<img src="/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-04-231852.png" style="zoom:33%;" />
+![Integral system diagram](../assets/integral-system-diagram-02.png)
 
 Above Diagram:
 This diagram illustrates how Integral replaces market price with a multi-signal valuation process rooted directly in biophysical and social conditions. COS supplies embodied labor and production metrics; OAD contributes design efficiencies and material-intensity data; FRS provides ecological impact and fairness signals; and CDS sets normative thresholds and policy boundaries. These inputs converge in a multi-signal valuation engine that determines the ITC access value of each good. Once goods are distributed, usage patterns and resource effects feed back into all four systems, updating the signals that guide future valuations. This adaptive loop ensures that economic calculation remains grounded in real conditions—labor effort, ecological constraints, and community need—rather than speculative demand or purchasing power.
