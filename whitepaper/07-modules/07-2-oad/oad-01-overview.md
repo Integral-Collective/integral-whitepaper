@@ -302,7 +302,7 @@ A cold-climate adaptation appears: a freeze-resistant filter casing. Months late
 
 ------
 
-![](/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-12-061741.png)
+![Integral system diagram](../../../assets/integral-system-diagram-12.png)
 
 Above Diagram: *Open Access Design System (OAD): Micro-Architecture and Feedback Loops*
 This diagram illustrates the micro-architecture of the Open Access Design System (OAD) and its role as Integral’s collective design intelligence. The vertical flow represents the lifecycle of a design, beginning with a new need or idea and proceeding through structured specification, collaborative refinement, ecological and lifecycle modeling, feasibility simulation, labor decomposition, system integration, optimization, certification, and archival in the global design commons.
