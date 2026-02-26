@@ -15,6 +15,7 @@ The document is organized into chapters and subsystem modules to support targete
 * [A Human-Level Analogy](02-human-analogy.md)
 * [What Integral Solves](03-what-integral-solves.md)
 * [What Integral Creates](04-what-integral-creates.md)
+* [The 5 Core Subsystems](05-the-5-core-subsystems.md)
 
 ---
 
