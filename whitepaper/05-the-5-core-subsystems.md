@@ -62,7 +62,8 @@ OAD is the epistemic backbone of the system. It includes, in part:
 
 There is no intellectual property. Knowledge is treated as a commons: transparent, shareable, and continuously improved. When a design is optimized—made easier to build, more repairable, or more resource-efficient—every node benefits immediately. This global learning effect is one of the primary engines of Integral’s post-scarcity trajectory. OAD supplies the structured knowledge that production cooperatives turn into real goods and infrastructure.
 
-<img src="/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-04-235518.png" style="zoom:33%;" />
+![Integral system diagram](../assets/integral-system-diagram-05.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/f58d7113-ce41-435a-8986-2ab3cfcf8956" />
+
 
 Above Diagram:
 This diagram illustrates how the Open Access Design system functions as the knowledge infrastructure of Integral. Design ideas and technical needs enter OAD from communities, production cooperatives, and feedback signals gathered through FRS. These proposals are collected and formalized into blueprints, specifications, methods, and process descriptions. They then undergo peer review, simulation, validation, and safety analysis to ensure feasibility and reliability. The resulting approved designs enter the shared, version-controlled knowledge commons, where they remain transparent, accessible, and universally available across all nodes.
