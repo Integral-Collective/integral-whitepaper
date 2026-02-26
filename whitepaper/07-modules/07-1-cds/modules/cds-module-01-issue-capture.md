@@ -123,7 +123,6 @@ def intake_submission(
     return issue
 
 ```
-
 ### Duplicate Detection — Math Sketch
 
 To avoid manufactured consensus and redundancy, near-duplicate submissions can be detected using cosine similarity over text embeddings.
