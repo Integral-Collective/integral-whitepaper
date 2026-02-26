@@ -19,7 +19,7 @@ This segmentation enables targeted critique, modular revision, and future mappin
 
 ---
 
-## Navigation
+## Navigation (in order of White Paper)
 
 * [Overview](cds-01-overview.md)
 * [Architecture & Orchestration Code](cds-02-architecture-code.md)
