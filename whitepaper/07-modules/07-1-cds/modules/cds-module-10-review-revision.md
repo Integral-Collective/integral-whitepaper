@@ -172,21 +172,20 @@ def evaluate_review_request(
 ```
 
 ------
-**Mathematical Sketch — Divergence Trigger**
+### Mathematical Sketch — Divergence Trigger
 
 Let:
 
-- $M_t$ = modeled indicator vector
-- $R_t$ = observed indicator vector
+• M_t = modeled indicator vector  
+• R_t = observed indicator vector  
 
-$$
-D = \sqrt{\sum_i w_i (M_i - R_i)^2}
-$$
+Define divergence:
+
+(1)  D = √( Σ_i w_i ( M_i − R_i )² )
 
 If:
-$$
-D > \tau \Rightarrow \text{review triggered}
-$$
+
+(2)  D > τ  →  review triggered
 
 ------
 
