@@ -16,6 +16,7 @@ The document is organized into chapters and subsystem modules to support targete
 * [What Integral Solves](03-what-integral-solves.md)
 * [What Integral Creates](04-what-integral-creates.md)
 * [The 5 Core Subsystems](05-the-5-core-subsystems.md)
+* [How the Five Systems Work as One](06-how-the-five-systems-work-as-one.md)
 
 ---
 
