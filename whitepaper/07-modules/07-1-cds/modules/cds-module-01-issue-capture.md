@@ -128,17 +128,18 @@ def intake_submission(
 
 To avoid manufactured consensus and redundancy, near-duplicate submissions can be detected using cosine similarity over text embeddings.
 
-Let `e(s)` be the embedding of submission text `s`.
+Let `e(s)` denote the embedding of submission text `s`.
 
-For a new submission `s_new` and existing submissions `{s_i}`, define:
+For a new submission `s_new` and existing submissions `{s_i}`, define the cosine similarity as:
 
-```text
-(1)  sim(s_new, s_i) = ( e(s_new) · e(s_i) ) / ( ||e(s_new)|| · ||e(s_i)|| )
+**(1)**  
+sim(s_new, s_i) = ( e(s_new) · e(s_i) ) / ( ||e(s_new)|| · ||e(s_i)|| )
 
-If:
+If the maximum similarity satisfies:
 
-(2)  max_i sim(s_new, s_i) > τ_dup
+**(2)**  
+max_i sim(s_new, s_i) > τ_dup
 
-for some chosen threshold τ_dup ∈ (0, 1), then s_new is marked as a near-duplicate and can be merged, collapsed, or flagged rather than added as a distinct submission.
+for some chosen threshold `τ_dup ∈ (0, 1)`, then `s_new` is marked as a near-duplicate and can be merged, collapsed, or flagged rather than added as a distinct submission.
 
 This keeps intake scalable and prevents repetition from overwhelming the later modules.
