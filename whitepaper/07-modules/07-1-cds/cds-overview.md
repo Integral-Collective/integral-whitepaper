@@ -266,6 +266,9 @@ A raised walkway approved to prevent storm flooding performs well initially. Six
 
 ![Integral system diagram](../assets/integral-system-diagram-11.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/42ce8a70-442b-482d-bd23-db3f955d2553" />
 
+![Integral system diagram](../assets/integral-system-diagram-11.png)
+
+
 
 
 
