@@ -290,7 +290,8 @@ FRS confirms ecological improvement.
 
 ------
 
-![](/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-13-194406.png)
+![Integral system diagram](../../../assets/integral-system-diagram-14.png)<img width="468" height="15" alt="image" src="https://github.com/user-attachments/assets/0bb7a786-cd5f-4e83-b6a2-e2548d503ef5" />
+
 
 Above Diagram: *COS Module Interaction* 
 This diagram depicts the internal cybernetic architecture of the Cooperative Organization System (COS) and its position within the broader Integral stack. COS operates as the production and operational layer of the federation, transforming certified designs and democratic priorities into real, coordinated physical activity—without firms, wages, markets, or managerial command.
