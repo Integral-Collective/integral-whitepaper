@@ -85,7 +85,7 @@ Where the village relied on simple estimations of effort, Integral extends the m
   - **Extinguishing of credits upon use**, preventing accumulation, trade, speculation, or conversion into power.
   - **Cross-node participation**, allowing labor and access to remain coherent across a federated network.
 
-**ITC is not a currency. **It cannot be transferred, saved, or used as leverage. Instead, it functions simultaneously as:
+**ITC is not a currency.** It cannot be transferred, saved, or used as leverage. Instead, it functions simultaneously as:
 
 1. **A reciprocity ledger** — recognizing and contextualizing contribution.
 2. **An economic-calculation engine** — determining the access value of goods based on embodied labor, material cost, ecological impact, scarcity conditions, and fairness adjustments.
@@ -94,7 +94,8 @@ The three-signal valuation method—**labor, ecology, and fairness**—ensures t
 
 This dual function—contribution recognition and adaptive access valuation—makes ITC the metabolic regulator of Integral. As OAD improves designs and COS increases production efficiency, the ITC access cost of goods naturally declines. This decline is not a subsidy but a structural outcome of cooperation, refined design, reduced material intensity, and continuous optimization. Over time, ITC guides the system toward lower labor burdens, greater sufficiency, and reliable access without relying on money, growth imperatives, or competitive incentives.
 
-<img src="/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/ITC LABOR FLOW.PNG" style="zoom: 33%;" />
+![Integral system diagram](../assets/ITC LABOR FLOW.PNG.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/3feffcb7-6e21-465f-9847-3494aced098c" />
+
 
 
 
