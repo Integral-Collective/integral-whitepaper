@@ -94,7 +94,7 @@ The three-signal valuation method—**labor, ecology, and fairness**—ensures t
 
 This dual function—contribution recognition and adaptive access valuation—makes ITC the metabolic regulator of Integral. As OAD improves designs and COS increases production efficiency, the ITC access cost of goods naturally declines. This decline is not a subsidy but a structural outcome of cooperation, refined design, reduced material intensity, and continuous optimization. Over time, ITC guides the system toward lower labor burdens, greater sufficiency, and reliable access without relying on money, growth imperatives, or competitive incentives.
 
-![Integral system diagram](../assets/ITC LABOR FLOW.PNG.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/3feffcb7-6e21-465f-9847-3494aced098c" />
+![Integral system diagram](../assets/ITC LABOR FLOW.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/3feffcb7-6e21-465f-9847-3494aced098c" />
 
 
 
