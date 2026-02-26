@@ -124,7 +124,7 @@ def intake_submission(
 
 ```
 
-**Duplicate Detection — Math Sketch**
+### Duplicate Detection — Math Sketch
 
 To avoid manufactured consensus and redundancy, near-duplicate submissions can be detected using cosine similarity over text embeddings.
 
@@ -132,6 +132,5 @@ Let `e(s)` be the embedding of submission text `s`.
 
 For a new submission `s_new` and existing submissions `{s_i}`, define:
 
-```math
-sim(s_new, s_i)
-= ( e(s_new) · e(s_i) ) / ( ||e(s_new)|| ||e(s_i)|| )
+```text
+(1)  sim(s_new, s_i) = ( e(s_new) · e(s_i) ) / ( ||e(s_new)|| · ||e(s_i)|| )
