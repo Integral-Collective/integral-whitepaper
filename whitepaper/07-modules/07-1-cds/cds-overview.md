@@ -264,7 +264,8 @@ All revisions are transparently recorded through **Module 7** and, when necessar
 **Example**
 A raised walkway approved to prevent storm flooding performs well initially. Six months later, FRS detects accelerated riverbank erosion and COS logs recurring maintenance strain. Module 10 initiates a formal review. The decision is amended: slope gradients are reduced, rest platforms added, and construction schedules adjusted seasonally. The revised plan is logged, dispatched, and monitored—without political conflict or loss of legitimacy.
 
-<img src="/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-12-031317.png" style="zoom: 25%;" />
+![Integral system diagram](../assets/integral-system-diagram-11.png)<img width="468" height="15" alt="image" src="https://github.com/user-attachments/assets/8dad3316-06bd-4a06-b681-7f7922722681" />
+
 
 Above Diagram:  *Collaborative Decision System (CDS) Micro-Architecture*
 This diagram illustrates the micro-level architecture of the Collaborative Decision System (CDS)—Integral’s participatory governance metabolism. Modules 1–6 form the core decision pipeline, transforming raw human input and system signals into structured issues, contextualized knowledge, constrained scenarios, deliberated options, and mathematically synthesized consensus. Module 7 records every step of this process in a transparent, tamper-evident public ledger, while Module 8 translates approved decisions into coordinated action across OAD, COS, ITC, and FRS.
