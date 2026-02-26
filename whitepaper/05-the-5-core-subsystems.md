@@ -16,7 +16,8 @@ This mapping ensures that the reader sees these systems not as abstract technolo
 
 This section introduces each system at the conceptual level before the next section details their micro-architecture.
 
-![](/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-04-230846.png)
+![Integral system diagram](../assets/integral-system-diagram-03.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/248f56b6-dc6e-4776-89ef-1ad00a1a0896" />
+
 
 ## 5.2 CDS — Collaborative Decision System
 
