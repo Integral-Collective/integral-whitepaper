@@ -119,7 +119,8 @@ The greenhouse becomes more efficient each season because feedback is easy to co
 The greenhouse becomes a living part of the community’s infrastructure—democratically initiated, collaboratively designed, cooperatively built, fairly accessed, and continuously improved. No competition, prices, or bargaining are needed. The system works because each subsystem reinforces the others, creating a self-correcting economic metabolism.
 
 
-<img src="/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-05-004619.png" style="zoom:33%;" />
+![Integral system diagram](../assets/integral-system-diagram-10.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/4e6ab5eb-81d2-4a1e-ac6e-b5d39f191949" />
+
 
 Above Diagram: 
 This diagram shows how the greenhouse project moves through all five Integral systems in a continuous adaptive loop. The process begins in CDS, where the community deliberates and authorizes the project. OAD then develops the collaborative design, drawing on shared knowledge and open iterations. COS coordinates production by forming cooperatives, scheduling tasks, acquiring resources, and carrying out construction. As work proceeds, COS generates the labor and material data used by ITC to record contributions and assign access values for the produce that the greenhouse will generate.
