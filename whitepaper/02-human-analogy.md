@@ -1,4 +1,5 @@
 2. A HUMAN-LEVEL ANALOGY 
+
 2.1 A Pre-Industrial Village
 
 Imagine a small pre-industrial village of a few dozen families. Over time, the villagers notice that the natural environment stays stable through cycles of feedback and gradual adjustment. No authority controls this order; it emerges from information flow. They decide their own society can function the same way—through shared knowledge, open coordination, and transparent responsibility.
