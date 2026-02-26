@@ -132,3 +132,44 @@ def check_constraints(
 ```
 
 ------
+### Math Sketch — Constraint Check as Multi-Domain Feasibility
+
+A scenario S is viable only if it satisfies:
+
+S ∈ F_eco ∩ F_res ∩ F_lab ∩ F_soc ∩ F_const
+
+Where each feasibility set defines a constraint domain.
+
+Ecological:
+(1)  ∀ i,  E_i(S) ≤ E_i_max
+
+Resource:
+(2)  R_j(S) ≤ R_j_available
+
+Labor:
+(3)  L(S) ≤ L_available
+
+Fairness & Social:
+(4)  A(S) ≤ A_threshold
+
+Constitutional:
+(5)  C_k(S) = True  ∀ k
+
+If any domain fails, the scenario is returned for revision with specificity rather than rejected in total.
+
+---
+
+### Semantic Summary
+
+Module 4 determines whether a proposal is:
+
+• ecologically viable  
+• materially feasible  
+• labor-coherent  
+• fair and accessible  
+• constitutionally permissible  
+
+If not, it produces a structured modification set.  
+If yes, the scenario proceeds to deliberation and consensus.
+
+This module functions as the ecological–constitutional immune system of CDS.
