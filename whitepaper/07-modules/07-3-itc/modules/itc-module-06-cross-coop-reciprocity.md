@@ -264,6 +264,8 @@ Where:
 • C_h = credited contribution in home node  
 
 Because equivalence is bounded, public, and non-exchangeable, this mechanism preserves fairness without enabling arbitrage.
+_
+
 **In Plain Language**
 
 > Module 6 ensures that “one ITC” retains coherent meaning across diverse conditions—without ever becoming a currency, an exchange rate, or a speculative layer.
