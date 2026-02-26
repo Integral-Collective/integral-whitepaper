@@ -37,7 +37,8 @@ CDS ensures that decisions are made *with* the people they affect, not *for* the
 
 As an aside, while Integral is conceived first and foremost as a democratic economic system, its overlap with broader democratic processes is entirely fluid. The same tools that enable cooperative economic coordination—direct participation, transparent deliberation, and algorithmic assistance—naturally extend to community decision-making at every level. In principle, this framework could replace the entire architecture of representative democracy itself. That said, this is not the immediate focus. Given the transitional realities faced, the priority is to establish economic intelligence and coordination first; political transformation emerges downstream from that foundation.
 
-<img src="/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-04-230335.png" style="zoom:25%;" />
+![Integral system diagram](../assets/integral-system-diagram-04.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/5c9ef312-746f-4bf4-aea4-7611b5ec7682" />
+
 
 Above Diagram: 
 This chart illustrates the structured decision-making cycle of the Collaborative Decision System. A need or issue is first identified through member input, contextual evidence, or signals arising from other systems such as FRS or COS. Individuals or working groups draft proposals, which move into a deliberation stage where participants refine ideas, generate alternatives, and articulate conditions for approval. Objection mapping captures principled concerns and enables modification of the proposal through design changes, scope adjustments, or mitigation plans. Once refined, the proposal enters a weighted consensus process in which participants register degrees of support rather than binary votes.
