@@ -14,6 +14,7 @@ The document is organized into chapters and subsystem modules to support targete
 * [Introduction](01-introduction.md)
 * [A Human-Level Analogy](02-human-analogy.md)
 * [What Integral Solves](03-what-integral-solves.md)
+* [What Integral Creates](04-what-integral-creates.md)
 
 ---
 
