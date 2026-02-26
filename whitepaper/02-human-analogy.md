@@ -39,9 +39,3 @@ Together, these principles show that the foundational elements of Integral—tra
 
 Table 2 — Village Practices: Integral System Equivalents
 
-Village Practice / Mechanism	Integral Equivalent System	Functional Role in Integral
-Open meetings for decision-making	CDS — Collaborative Decision System	Democratic deliberation, collective policy formation, and public review of needs and constraints. Ensures that design and access decisions reflect shared understanding rather than authority.
-Shared notebook for tools, infrastructure ideas, and designs	OAD — Open Access Design	Common knowledge repository for open blueprints, design standards, and environmental considerations. Supports iterative improvement and sustainable design choices.
-Communal ledger tracking labor, materials, skill differences, and ecological impact	ITC — Integral Time Credits	Contribution accounting and access valuation. ITC value for goods reflects embodied labor, resource use, tooling cost, and ecological impact. Includes need-based adjustments so impaired individuals access goods fairly. Prevents price dynamics while ensuring responsible use of shared resources.
-Rotating work teams coordinating daily tasks and production	COS — Cooperative Organization System	Distributed workflow coordination, task allocation, and resource flow management. COS generates the raw data—labor hours, resource withdrawal, tool usage—used by ITC to determine access value.
-Household visits gathering workload, need, and resource feedback	FRS — Feedback & Review System	Continuous monitoring of performance, resource balance, ecological conditions, and household needs. Feeds adjustments back into COS planning and ITC valuation, preventing shortages, drift, or inequities.
