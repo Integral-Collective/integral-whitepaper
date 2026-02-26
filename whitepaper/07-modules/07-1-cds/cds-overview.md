@@ -264,7 +264,8 @@ All revisions are transparently recorded through **Module 7** and, when necessar
 **Example**
 A raised walkway approved to prevent storm flooding performs well initially. Six months later, FRS detects accelerated riverbank erosion and COS logs recurring maintenance strain. Module 10 initiates a formal review. The decision is amended: slope gradients are reduced, rest platforms added, and construction schedules adjusted seasonally. The revised plan is logged, dispatched, and monitored—without political conflict or loss of legitimacy.
 
-![Integral system diagram](../assets/integral-system-diagram-11.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/a66bfb3f-b2cc-4617-8cd7-9cea0c900a4f" />
+![Integral system diagram](../assets/integral-system-diagram-11.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/42ce8a70-442b-482d-bd23-db3f955d2553" />
+
 
 
 
