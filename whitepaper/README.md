@@ -11,7 +11,7 @@ The document is organized into chapters and subsystem modules to support targete
 ### Core Sections
 
 * [Abstract](00-abstract.md)
-* Introduction *(coming next)*
+* [Introduction](01-introduction.md)
 * Problem Space *(coming next)*
 * Solution Overview *(coming next)*
 
