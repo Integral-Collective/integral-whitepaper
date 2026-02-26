@@ -16,8 +16,7 @@ Four mechanisms drive this trajectory:
 As these dynamics compound, fewer labor hours are needed to maintain stable access to essentials, and resource intensity declines across the system. This is the structural basis for Integral’s post-scarcity trajectory: **efficiency and sufficiency emerge from cooperation, open design, cybernetic feedback and true economizing—not from growth, competition, or manufactured demand.**
 
 
-
-<img src="/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-04-234904.png" style="zoom: 33%;" />
+![Integral system diagram](../assets/integral-system-diagram-01.png)
 
 Above Diagram:
 This diagram illustrates how Integral generates a post-scarcity trajectory not by assuming abundance but by systematically reducing the labor and material intensity required to meet essential needs. Four reinforcing mechanisms drive this process. Open Access Design (OAD) continuously improves tools, technologies, and methods across all nodes, reducing the difficulty and resource requirements of production. Cooperative Organization (COS) eliminates redundant effort by coordinating shared designs and distributed workflows, preventing the parallel, competitive duplication found in market systems. Adaptive Feedback (FRS) aligns resources with actual conditions, preventing misallocation and ensuring that production follows real patterns of need rather than price fluctuations or speculative demand. Finally, the fundamental incentive shift—arising from the absence of profit pressures, market share competition, and turnover requirements—removes the structural drivers of waste, planned obsolescence, and unnecessary throughput.
