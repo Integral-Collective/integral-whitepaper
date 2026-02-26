@@ -181,8 +181,8 @@ This information feeds directly into the multi-signal valuation process that det
 COS is the operational engine that turns OAD designs into real goods, generates the metrics required for accurate economic calculation, and enables the adaptive coordination on which the entire system depends.
 
 
+![Integral system diagram](../assets/integral-system-diagram-08.png)<img width="468" height="29" alt="image" src="https://github.com/user-attachments/assets/4f13a533-e2ad-45d1-baee-2e89befec6bb" />
 
-![](/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-05-001512.png)
 
 Above Diagram:
 This flow diagram shows how COS converts community needs, design specifications, and policy boundaries into coordinated production. Cooperative formation and planning occur continuously, allowing COS to create or reorganize production groups as conditions change. Once a production task is defined, COS matches skills, acquires required resources—drawing first from internal inventories, then from nearby nodes, and finally from external sources if necessary—and allocates materials accordingly. Scheduling organizes the workflow that leads to actual production.
