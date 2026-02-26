@@ -209,9 +209,8 @@ FRS then feeds this information back to CDS, OAD, COS, and ITC, triggering adjus
 
 FRS is the adaptive nervous system of Integral: continuously observing, analyzing, diagnosing, and guiding improvements. Without FRS, the system would drift; with FRS, it becomes self-correcting, continuously aligning production, access, and ecological conditions across the entire network.
 
+![Integral system diagram](../assets/integral-system-diagram-09.png)<img width="468" height="15" alt="image" src="https://github.com/user-attachments/assets/003389ae-ec97-4d3e-acce-c0d6e65f0a13" />
 
-
-![](/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-05-002342.png)
 
 Above Diagram: This diagram shows how FRS functions as Integral’s diagnostic and regulatory nervous system. Multiple categories of information—ecological data, production metrics, ITC contribution and access patterns, node-level conditions, and direct member feedback—flow into FRS, where they are continuously monitored and aggregated. FRS analyzes these signals to identify trends, inefficiencies, risks, or emerging imbalances, and then performs diagnostic checks to detect anomalies or misalignments between actual conditions and system operation.
 
