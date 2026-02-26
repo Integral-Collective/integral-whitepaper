@@ -37,5 +37,4 @@ Finally, modest post-scarcity can emerge through cooperation. As efficiency rise
 
 Together, these principles show that the foundational elements of Integral—transparency, equitable contribution, open design, distributed coordination, ecological awareness, and continuous feedback—are not technological inventions but enduring organizational dynamics. Modern Integral uses advanced tools only to scale these dynamics into a fully viable cooperative economic system.
 
-Table 2 — Village Practices: Integral System Equivalents
-
+![Human-level analogy table](../assets/human-analogy-table-01.png)
