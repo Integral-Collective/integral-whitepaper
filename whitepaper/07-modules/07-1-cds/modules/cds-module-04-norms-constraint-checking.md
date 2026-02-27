@@ -132,44 +132,45 @@ def check_constraints(
 ```
 
 ------
-### Math Sketch — Constraint Check as Multi-Domain Feasibility
+**Math Sketch — Constraint Check as Multi-Domain Feasibility**
 
-A scenario S is viable only if it satisfies:
+A scenario $S$ is viable only if it satisfies:
 
-S ∈ F_eco ∩ F_res ∩ F_lab ∩ F_soc ∩ F_const
+$$S \in \mathcal{F}_{eco} \;\cap\; \mathcal{F}_{res} \;\cap\; \mathcal{F}_{lab} \;\cap\; \mathcal{F}_{soc} \;\cap\; \mathcal{F}_{const}$$
 
-Where each feasibility set defines a constraint domain.
+Where each feasibility set defines a constraint domain:
 
-Ecological:
-(1)  ∀ i,  E_i(S) ≤ E_i_max
+**Ecological**
 
-Resource:
-(2)  R_j(S) ≤ R_j_available
+$$\forall i,\; E_i(S) \leq E_i^{max}$$
 
-Labor:
-(3)  L(S) ≤ L_available
+**Resource**
 
-Fairness & Social:
-(4)  A(S) ≤ A_threshold
+$$R_j(S) \leq R_j^{available}$$
 
-Constitutional:
-(5)  C_k(S) = True  ∀ k
+**Labor**
 
-If any domain fails, the scenario is returned for revision with specificity rather than rejected in total.
+$$L(S) \leq L^{available}$$
+
+**Fairness & Social**
+
+$$A(S) \leq A^{threshold}$$
+
+**Constitutional**
+
+$$C_k(S) = \text{True} \;\; \forall k$$
+
+If any domain fails, the scenario is returned for revision with specificity, not rejected in total.
 
 ---
 
-### Semantic Summary
+**Semantic Summary**
 
 Module 4 determines whether a proposal is:
+- **ecologically viable**
+- **materially feasible**
+- **labor-coherent**
+- **fair and accessible**
+- **constitutionally permissible**
 
-• ecologically viable  
-• materially feasible  
-• labor-coherent  
-• fair and accessible  
-• constitutionally permissible  
-
-If not, it produces a structured modification set.  
-If yes, the scenario proceeds to deliberation and consensus.
-
-This module functions as the ecological–constitutional immune system of CDS.
+If not, it produces a structured modification set. If yes, the scenario proceeds to deliberation and consensus. This module functions as the **ecological–constitutional immune system** of CDS.
