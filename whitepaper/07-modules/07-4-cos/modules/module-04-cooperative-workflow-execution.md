@@ -310,3 +310,27 @@ CT \approx \frac{WIP}{\lambda}
 $$
 
 ---
+**How Module 4 Talks to ITC, OAD, and FRS**
+
+- **To ITC (Labor Event Capture & Valuation)**
+  - COS emits structured labor claims on task completion.
+  - ITC Module 1 verifies + records official labor events; Module 2 weights them.
+  - Deviations from estimate inform **valuation realism** (true labor intensity).
+- **To OAD (Design Feedback)**
+  - Chronic overruns or blockages highlight design friction (tooling, alignment, unnecessary steps).
+  - OAD redesign reduces cycle time; ITC access-values drop accordingly.
+- **To FRS (System Health)**
+  - Chronic blocking, over-reliance on individuals, and abnormal overtime patterns become system-health signals.
+  - CDS can respond with training programs, safety norms, or redesign directives.
+
+------
+
+**Plain-Language Example**
+
+- Plan: “Wheel truing should take 0.5 hours.”
+- Reality: “It’s taking 0.8 hours and blocking often.”
+- COS logs it; Module 5 flags a bottleneck; OAD redesign/training improves the workflow; ITC access-values fall as real effort falls.
+
+Module 4 is where that proof lives.
+
+------
