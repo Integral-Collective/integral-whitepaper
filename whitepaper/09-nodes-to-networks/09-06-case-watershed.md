@@ -134,7 +134,7 @@ The same formal pattern—observable state, scope detection, threshold classific
 
 
 
-![Integral system diagram](../../../assets/integral-system-diagram-16.png)<img width="468" height="15" alt="image" src="https://github.com/user-attachments/assets/30541714-d7f9-48e9-868b-f46299cb7d2a" />
+![Integral system diagram](assets/integral-system-diagram-16.png)
 
 
 Above Diagram: *Bioregional Watershed Coordination Control Loop*
