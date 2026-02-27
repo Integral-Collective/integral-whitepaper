@@ -293,43 +293,42 @@ def run_itc_ethics_monitoring_cycle(
 ```
 
 ------
-### Math Sketch — Ethical Pattern Indicators
+**Math Sketch — Ethical Pattern Indicators**
 
-1) Queue bias correlation
+**1. Queue Bias Correlation**
 
 Let:
-
-• B_i = ITC balance  
-• R_i = priority rank (lower is better)  
+- $B_i$ = ITC balance
+- $R_i$ = priority rank (lower is better)
 
 Compute:
 
-(1)  ρ = corr( B_i , − R_i )
+$$\rho = \text{corr}(B_i,\ -R_i)$$
 
 If:
 
-(2)  ρ ≥ ρ_min
+$$\rho \ge \rho_{\min}$$
 
-over sufficient samples → flag queue bias.
+over sufficient samples → flag **queue bias**.
 
 ---
 
-2) Proto-market exchange score
+**2. Proto-Market Exchange Score**
 
-For account pair (a, b):
+For account pair $(a, b)$:
 
-(3)  M_{a,b} = ( N_{a→b} + N_{b→a} ) / ( N_baseline + ε )
+$$M_{a,b} = \frac{N_{a\to b} + N_{b\to a}}{N_{\text{baseline}} + \varepsilon}$$
 
 If:
 
-(4)  M_{a,b} ≥ M_threshold
+$$M_{a,b} \ge M_{\text{threshold}}$$
 
-→ flag proto-market exchange.
+→ flag **proto-market exchange**.
 
 ---
 
-In plain language:
+**In Plain Language**
 
-Module 7 ensures ITCs never become money by making misuse visible, diagnosable, and correctable.
+> Module 7 ensures ITCs never become money by making misuse **visible, diagnosable, and correctable**.
 
 No hidden markets. No coercive leverage. No silent power accumulation. Just transparent signals feeding democratic governance.
