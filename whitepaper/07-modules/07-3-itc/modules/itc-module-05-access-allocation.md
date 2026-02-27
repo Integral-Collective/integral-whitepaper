@@ -303,28 +303,26 @@ def redeem_access(
 
 ------
 
-### Math Sketch — Formal Access-Value Computation
+**Math Sketch — Formal Access-Value Computation**
 
-Let a good g with design version v in node n.
+Let a good $g$ with design version $v$ in node $n$.
 
-Base hours-equivalent obligation (design-level):
+**Base hours-equivalent obligation** (design-level):
 
-(1)  H_base =
-       H_prod
-       + ( H_maint_total / H_life ) · H_ref
-       + w_E ( α_E E + α_S S_eco )
-       + w_M ( α_M M )
+$$H_{\text{base}} = H_{\text{prod}} + \frac{H_{\text{maint,total}}}{H_{\text{life}}}\,H_{\text{ref}} + w_E(\alpha_E E + \alpha_S S_{\text{eco}}) + w_M(\alpha_M M)$$
 
-Context multipliers (bounded, smooth):
+**Context multipliers** (bounded, smooth):
 
-(2)  m_sc   = 1 + B_sc   · tanh( σ_sc )
-     m_eco  = 1 + B_eco  · tanh( σ_eco )
-     m_back = 1 + B_back · tanh( σ_back )
+$$m_{\text{sc}} = 1 + B_{\text{sc}} \tanh(\sigma_{\text{sc}})$$
 
-Raw ITC obligation:
+$$m_{\text{eco}} = 1 + B_{\text{eco}} \tanh(\sigma_{\text{eco}})$$
 
-(3)  C_raw = β · H_base · m_sc · m_eco · m_back
+$$m_{\text{back}} = 1 + B_{\text{back}} \tanh(\sigma_{\text{back}})$$
 
-Fairness bounds by class f:
+**Raw ITC obligation**:
 
-(4)  C_final = min( max( C_raw , C_f_min ) , C_f_max )
+$$C_{\text{raw}} = \beta \, H_{\text{base}} \, m_{\text{sc}} \, m_{\text{eco}} \, m_{\text{back}}$$
+
+**Fairness bounds** by class $f$:
+
+$$C_{\text{final}} = \min\Big(\max(C_{\text{raw}}, C_{f,\min}), \; C_{f,\max}\Big)$$
