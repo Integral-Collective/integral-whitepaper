@@ -308,53 +308,44 @@ def certify_design_version(
 
 In practice, certification thresholds are sector-specific and policy-defined at the node or federation level (e.g., medical devices require stricter safety margins than garden tools).
 
-### Math Sketch — Certification Risk Index
+**Math Sketch — Certification Risk Index**
 
 Let the per-dimension risk scores be:
+- $r_E$ = ecological risk
+- $r_S$ = safety/feasibility risk
+- $r_L$ = lifecycle risk
+- $r_{Lab}$ = labor/ergonomic risk
+- $r_I$ = integration risk
 
-• r_E = ecological risk  
-• r_S = safety / feasibility risk  
-• r_L = lifecycle risk  
-• r_Lab = labor / ergonomic risk  
-• r_I = integration risk  
+Define **overall risk**:
 
-Define overall risk:
-
-(1)  R_overall = (1 / 5) ( r_E + r_S + r_L + r_Lab + r_I )
+$$R_{\text{overall}} = \frac{1}{5}(r_E + r_S + r_L + r_{Lab} + r_I)$$
 
 Certification decision:
 
-(2)  certify = True  if all dimension checks pass AND R_overall ≤ τ_R  
-     certify = False otherwise
+$$\text{certify} = \begin{cases} \text{True}, & \text{if all dimension checks pass and } R_{\text{overall}} \le \tau_R \\ \text{False}, & \text{otherwise} \end{cases}$$
 
-where τ_R is a conservatively chosen risk threshold (e.g., 0.5).
+where $\tau_R$ is a conservatively chosen risk threshold (e.g. 0.5).
 
-In plain language:
-
-> Even if a design squeaks by on all individual checks, if its aggregate risk profile is too high, Module 9 can still refuse certification or demand redesign.  
-> This prevents borderline designs from slipping through just because they technically meet minimums.
+> Even if a design squeaks by on all individual checks, if its **aggregate risk profile** is too high, Module 9 can still refuse certification or demand redesign. This prevents "borderline" designs from slipping through just because they technically meet minimums.
 
 ---
 
-### How Module 9 Feeds COS, ITC, and Module 10
+**How Module 9 Feeds COS, ITC, and Module 10**
 
 **COS**
-
-• Only certified versions are treated as production-ready  
-• COS queries CertificationRecords to assemble approved design catalogs for each sector and climate  
+- Only certified versions are treated as production-ready.
+- COS queries CertificationRecords to assemble **approved design catalogs** for each sector and climate.
 
 **ITC**
-
-• Uses the certified bundle (Eco, Lifecycle, Labor, ValuationProfile) to compute:  
-  – access ITC ranges  
-  – maintenance obligations  
-  – relative scarcity / impact signals  
+- Uses the certified bundle (Eco, Lifecycle, Labor, ValuationProfile) to compute:
+  - access ITC ranges,
+  - maintenance obligations,
+  - and relative scarcity/impact signals.
 
 **Module 10 (Knowledge Commons & Reuse Repository)**
-
-• For every certified version, Module 9 passes:  
-  – CertificationRecord  
-  – EcoAssessment, LifecycleModel, LaborProfile, SimulationResult, IntegrationCheck  
-  – tags, climate, sector, and adoption data  
-
-• Module 10 then creates / updates RepoEntry and maintains reuse count and variant chains
+- For every certified version, Module 9 passes:
+  - `CertificationRecord`
+  - `EcoAssessment`, `LifecycleModel`, `LaborProfile`, `SimulationResult`, `IntegrationCheck`
+  - tags, climate, sector, and adoption data
+- Module 10 then creates/updates `RepoEntry` and maintains reuse count and variant chains.
