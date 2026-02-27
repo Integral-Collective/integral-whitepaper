@@ -355,3 +355,72 @@ Triggered when:
 - or FRS/ITC request reevaluation after a shock.
 
 ------
+**Math Sketch — Network-Level Autonomy and Fragility**
+
+Let the following quantities be defined:
+- $s_{\text{int}}$: total share routed to **internal** cooperative units
+- $s_{\text{fed}}$: total share routed to **federated** (inter-node) cooperative units
+- $s_{\text{ext}}$: total share routed to **external transitional** units
+
+These represent how the production process for a given good is distributed across scopes.
+
+Let:
+- $s_i$ be the **normalized share** of the total process handled by cooperative unit $i$
+
+Let:
+- $E$ be the **total share of the process routed through critical external links**
+  (i.e., links whose failure would halt production)
+
+**Autonomy Index**
+
+First compute the raw autonomy score:
+
+$$
+A_{\text{raw}} = \alpha\, s_{\text{int}} + \beta\, s_{\text{fed}} - \gamma\, s_{\text{ext}}
+$$
+
+Then clip the value to the unit interval:
+
+$$
+A = \mathrm{clip}(A_{\text{raw}},\, 0,\, 1)
+$$
+
+**Fragility Index**
+
+Compute a concentration measure (Herfindahl-style):
+
+$$
+H = \sum_i s_i^2
+$$
+
+Add a penalty for critical external dependence:
+
+$$
+F_{\text{raw}} = H + \lambda E
+$$
+
+Then clip to the unit interval:
+
+$$
+F = \mathrm{clip}(F_{\text{raw}},\, 0,\, 1)
+$$
+
+**Advisory Valuation Multiplier (ITC Input)**
+
+Define a **bounded advisory multiplier** used by ITC as one input to access-value computation:
+
+$$
+m = \mathrm{clip}\!\left(
+1 + k_1 (F - F_0) - k_2 (A - A_0),
+\; m_{\min},\; m_{\max}
+\right)
+$$
+
+**Interpretation in Plain Language**
+
+Module 8 answers: **"What does this good depend on, and how fragile is that dependency web?"**
+
+- If production depends heavily on **transitional external** suppliers or on a **single critical unit**, fragility rises.
+- If production is distributed across internal + federated capacity, autonomy rises.
+- ITC can use this as a **bounded advisory input** (not a price signal) to reflect systemic risk and encourage long-run autonomy.
+- FRS uses it to track resilience trends and prompt long-horizon planning: "what should we internalize, federate, or redesign to reduce fragility?"
