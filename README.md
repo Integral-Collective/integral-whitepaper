@@ -1,130 +1,104 @@
 # Integral Whitepaper
 
-This repository contains the **technical whitepaper for Integral** — a federated, post-monetary, cybernetically coordinated cooperative economic system.
+This repository contains the **GitHub-native technical whitepaper for Integral** — a federated, post-monetary, cybernetically coordinated cooperative economic system.
 
 The document presents:
 
-- conceptual foundations
-- subsystem architecture
-- module-level specifications
-- mathematical sketches
-- pseudocode models
-- governance logic
-- coordination mechanisms
-- feedback and learning structures
-
-The whitepaper is structured to support **peer review, technical implementation, and interdisciplinary critique**.
+* conceptual foundations
+* subsystem architecture
+* module specifications
+* applied service examples
+* federation and scaling logic
+* internodal reciprocity mechanisms
+* transition and implementation pathways
 
 ---
 
-## Repository Purpose
+# 📘 Start Reading
 
-This repository functions as:
+➡️ **Whitepaper entry point**
 
-- the canonical whitepaper draft
-- a modular specification scaffold
-- a peer-reviewable technical reference
-- a bridge between theory and implementation
-- the conceptual backbone for the Integral software stack
-
-Development of software occurs in separate repositories.
+```
+/whitepaper/README.md
+```
 
 ---
 
-## Whitepaper Structure
+# Repository Structure
 
-The whitepaper is organized as a modular document under:
-
-whitepaper/
-
-Core sections include:
-
-- abstract and introduction
-- conceptual foundations
-- subsystem overview
-- detailed module specifications
-- orchestration models
-- mathematical sketches
-- architectural pseudocode
+```
+whitepaper/            → Full whitepaper (sectioned, reviewable)
+assets/                → Global diagrams and shared images
+.github/ISSUE_TEMPLATE → Peer review and revision templates
+README.md              → Repository overview (this file)
+```
 
 ---
 
-## Core Subsystems
+# Whitepaper Architecture
 
-Integral is composed of five primary subsystems:
+The whitepaper is organized as a progressive system narrative:
 
-| Subsystem | Role |
-|----------|------|
-| CDS | Collaborative decision architecture and democratic governance |
-| OAD | Open design infrastructure and physical commons engineering |
-| ITC | Contribution accounting and labor reciprocity framework |
-| COS | Cooperative production coordination and operational execution |
-| FRS | Feedback, diagnostics, simulation, and institutional learning |
+1. Foundations (00–06)
+2. Subsystem architecture (07)
+3. Worked example (08)
+4. Federation and scaling (09)
+5. Internodal reciprocity (10)
+6. Transition and implementation (11)
 
-Each subsystem contains:
+This structure enables:
 
-- overview
-- architecture model
-- module specifications
-- orchestration layer
-
----
-
-## Repository Layout
-
-.
-├── assets/ # diagrams, figures, images
-├── whitepaper/ # structured whitepaper content
-│ └── 07-modules/ # subsystem module specifications
-└── README.md # repository entry point
-
+* granular review
+* precise diff tracking
+* modular expansion
+* technical citation stability
+* future website and publication rendering
 
 ---
 
-## Mathematical Notation
+# Peer Review Workflow
 
-Mathematical sections use Markdown-compatible formatting designed for GitHub readability while preserving semantic clarity.
+This repository supports structured review through:
 
-These sketches are conceptual models, not finalized implementations.
+### Issues
 
----
+Used for critique, questions, and conceptual discussion.
 
-## Contribution & Review
+### Pull Requests
 
-This repository supports structured peer review through:
+Used for proposed edits or structural changes.
 
-- Issues (discussion and critique)
-- Pull requests (proposed edits)
-- Discussions (higher-level dialogue)
+### Discussions
 
-The document is under continuous development.
+Used for higher-level architectural dialogue.
 
----
+Templates for critique and revision are available in:
 
-## Relationship to Implementation
-
-This repository contains **specification and theory**, not production software.
-
-Implementation efforts live within the broader Integral software ecosystem.
+```
+.github/ISSUE_TEMPLATE/
+```
 
 ---
 
-## Guiding Philosophy
+# Design Principles
 
-Integral proposes a socio-economic architecture grounded in:
+This repository is structured to prioritize:
 
-- cooperation rather than competition
-- ecological constraint awareness
-- democratic governance
-- cybernetic feedback
-- commons-based production
-- transparent coordination
-- institutional learning
-
-The whitepaper provides the technical articulation of this architecture.
+* transparency
+* modularity
+* reviewability
+* protocol clarity
+* non-linear navigation
+* long-term technical maintainability
 
 ---
 
-## Status
+# Status
 
-Draft — evolving through iterative research, critique, and specification refinement.
+This repository represents the actively maintained GitHub conversion of the Integral whitepaper and serves as the canonical technical reference for:
+
+* research
+* peer review
+* implementation scaffolding
+* public documentation
+* future software integration
