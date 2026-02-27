@@ -215,53 +215,49 @@ def optimize_design(
 ```
 
 ------
-### Math Sketch — Multi-Objective Optimization
+**Math Sketch — Multi-Objective Optimization**
 
 Let the design state vector be:
 
-(1)  x = (E, M, L_p, L_m, B, F, I)
+$$\mathbf{x} = (E, M, L_p, L_m, B, F, I)$$
 
 Where:
-
-• E = ecological score  
-• M = material intensity  
-• L_p = production labor  
-• L_m = maintenance labor  
-• B = lifecycle burden  
-• F = feasibility score  
-• I = integration score  
+- $E$ = ecological score
+- $M$ = material intensity
+- $L_p$ = production labor
+- $L_m$ = maintenance labor
+- $B$ = lifecycle burden
+- $F$ = feasibility score
+- $I$ = integration score
 
 Define the scalar objective:
 
-(2)  J(x) = w_E E + w_M M + w_Lp L_p + w_Lm L_m + w_B B − w_F F − w_I I
+$$J(\mathbf{x}) = w_E E + w_M M + w_{Lp} L_p + w_{Lm} L_m + w_B B - w_F F - w_I I$$
 
 Optimization problem:
 
-(3)  minimize J(x)  subject to  x ∈ D
+$$\min_{\mathbf{x} \in \mathcal{D}} J(\mathbf{x})$$
 
 Subject to constraints from:
+- Module 5 (safety & feasibility),
+- Module 7 (integration),
+- ecological thresholds (Module 3).
 
-• Module 5 (safety & feasibility)  
-• Module 7 (integration)  
-• ecological thresholds (Module 3)  
-
-This is a Pareto-constrained, multi-objective physical optimization, not a market cost minimization.
+This is a **Pareto-constrained, multi-objective physical optimization**, not a market cost minimization.
 
 ---
 
-### Interpretation in Plain Language
+**Interpretation in Plain Language**
 
-> Module 8 is where Integral’s design intelligence becomes self-improving.
+> Module 8 is where Integral's design intelligence becomes **self-improving**.
 
 It does not ask:
-
-• “What is cheapest?”  
-• “What is most profitable?”  
+- "What is cheapest?"
+- "What is most profitable?"
 
 It asks:
+- "What lasts the longest with the least human burden?"
+- "What uses the least material and energy for the most service?"
+- "What integrates most cleanly into circular infrastructure?"
 
-• “What lasts the longest with the least human burden?”  
-• “What uses the least material and energy for the most service?”  
-• “What integrates most cleanly into circular infrastructure?”  
-
-Designs that survive here become the backbone of the physical commons.
+Designs that survive here become **the backbone of the physical commons**.
