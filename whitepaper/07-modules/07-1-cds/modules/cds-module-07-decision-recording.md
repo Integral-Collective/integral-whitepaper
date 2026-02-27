@@ -188,37 +188,33 @@ def validate_hash_chain(
 ```
 
 ------
-### Math Sketch — Merkle-Style Attestation
+**Math Sketch — Merkle-Style Attestation**
 
 Each log entry hash is computed as:
 
-(1)  H_i = SHA256( serialize(P_i) || H_(i-1) )
+$$H_i = \mathrm{SHA256}\big(\mathrm{serialize}(P_i) \;\Vert\; H_{i-1}\big)$$
 
 Where:
-
-• P_i = payload of entry i  
-• H_(i-1) = previous entry’s hash  
+- $P_i$ is the payload of entry $i$
+- $H_{i-1}$ is the previous entry's hash
 
 This guarantees:
+- any modification breaks the chain
+- deletions are detectable
+- reordering is impossible
+- the full decision lineage is reproducible
 
-• any modification breaks the chain  
-• deletions are detectable  
-• reordering is impossible  
-• the full decision lineage is reproducible  
-
-This provides blockchain-grade integrity without blockchain overhead.
+This provides **blockchain-grade integrity without blockchain overhead**.
 
 ---
 
-### Semantic Summary
+**Semantic Summary**
 
 Module 7 ensures:
+- **historical transparency** — every decision step is inspectable
+- **tamper-evidence** — no retroactive edits
+- **epistemic legitimacy** — all disputes reference the same record
+- **federated trust** — nodes can verify one another's governance
+- **institutional memory** — learning persists across time
 
-• historical transparency — every decision step is inspectable  
-• tamper-evidence — no retroactive edits  
-• epistemic legitimacy — all disputes reference the same record  
-• federated trust — nodes can verify one another’s governance  
-• institutional memory — learning persists across time  
-
-Without Module 7, CDS could drift, obscure rationale, or silently override public consensus.  
-With it, CDS becomes a verifiable democratic protocol, not a black-box governance tool.
+Without Module 7, CDS could drift, obscure rationale, or silently override public consensus. With it, CDS becomes a **verifiable democratic protocol**, not a black-box governance tool.
