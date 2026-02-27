@@ -222,38 +222,34 @@ def evaluate_system_integration(
 ```
 
 ------
-### Math Sketch — Integration Scoring
+**Math Sketch — Integration Scoring**
 
 Let:
-
-• C = number of integration conflicts  
-• L = number of circular loop opportunities discovered  
+- $C$ = number of **integration conflicts**
+- $L$ = number of **circular loop opportunities** discovered
 
 Define:
 
-(1)  I = clamp( 1 − α C + β L )
+$$I = \text{clamp}\big( 1 - \alpha C + \beta L \big)$$
 
 Where:
-
-• α = penalty weight per conflict (e.g., 0.2)  
-• β = reward weight per circular loop (e.g., 0.05)  
+- $\alpha$ = penalty weight per conflict (e.g., 0.2)
+- $\beta$ = reward weight per circular loop (e.g., 0.05)
 
 Thus:
-
-• A design with many interface conflicts is strongly penalized  
-• A design that enables resource circularity is softly rewarded  
-• Final score I ∈ [0,1] gives a clean compatibility signal  
+- A design with **many interface conflicts** is strongly penalized.
+- A design that enables **resource circularity** is softly rewarded.
+- Final score $I \in [0,1]$ gives a clean compatibility signal.
 
 ---
 
-### Interpretation in Plain Language
+**Interpretation in Plain Language**
 
-> Module 7 answers: “Does this thing actually fit into the world we are trying to build?”
+> Module 7 answers: *"Does this thing actually fit into the world we are trying to build?"*
 
 It prevents:
+- COS from planning impossible installs,
+- ITC from mis-valuing goods that secretly demand extra retrofits,
+- and OAD from certifying designs that only work in abstract isolation.
 
-• COS from planning impossible installs  
-• ITC from mis-valuing goods that secretly demand extra retrofits  
-• OAD from certifying designs that only work in abstract isolation  
-
-Designs that integrate cleanly, enable circular reuse, and respect real spatial and infrastructure limits become preferred templates across the federation.
+Designs that integrate cleanly, enable circular reuse, and respect real spatial and infrastructure limits become **preferred templates** across the federation.
