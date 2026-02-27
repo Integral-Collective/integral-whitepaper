@@ -174,57 +174,50 @@ def compute_consensus(
 ```
 
 ------
-### Math Sketch: Consensus Score & Objection Index
+**Math Sketch: Consensus Score & Objection Index**
 
-1) Preference Gradient (Weighted)
+**1. Preference Gradient (Weighted)**
 
-For votes v_i with participant weights w_i and mapped preference values p_i:
+For votes $v_i$ with participant weights $w_i$ and mapped preference values $p_i$:
 
-(1)  C = ( Σ_i w_i p_i ) / ( Σ_i w_i )
+$$C = \frac{\sum_i w_i p_i}{\sum_i w_i}$$
 
-This produces a continuous consensus metric, not a binary vote.
+This produces a **continuous consensus metric**, not a binary vote.
 
----
-
-2) Objection Index
+**2. Objection Index**
 
 Each objection has:
-
-• severity s_i ∈ [0,1]  
-• scope w_i ∈ [0,1]
+- severity $s_i \in [0,1]$
+- scope $w_i \in [0,1]$
 
 The objection index is:
 
-(2)  O = max_i ( s_i · w_i )
+$$O = \max_i (s_i \cdot w_i)$$
 
 This ensures serious objections cannot be overridden by numeric dominance.
 
----
-
-3) Approval Conditions
+**3. Approval Conditions**
 
 A scenario is approved if:
 
-(3)  C ≥ C_threshold   AND   O < O_block
+$$C \ge C_{\text{threshold}} \quad \text{and} \quad O < O_{\text{block}}$$
 
 If:
-
-• C < C_threshold → revise  
-• O ≥ O_block → revise (blocking objection)  
-• contradictory signals / value conflict → escalate to Module 9  
+- $C < C_{\text{threshold}}$ → revise
+- $O \ge O_{\text{block}}$ → revise (blocking objection)
+- contradictory signals / value conflict → escalate to Module 9
 
 ---
 
-### Semantic Summary
+**Semantic Summary**
 
 The Weighted Consensus Mechanism:
+- handles qualitative preferences numerically
+- protects principled minority concerns
+- maintains transparency and non-coercion
+- returns a clear directive:
+  - **approve**
+  - **revise**
+  - **escalate to Module 9**
 
-• handles qualitative preferences numerically  
-• protects principled minority concerns  
-• maintains transparency and non-coercion  
-• returns a clear directive:
-  • approve  
-  • revise  
-  • escalate to Module 9  
-
-It is the decision-synthesis mechanism of CDS — while the formal Decision object itself is recorded in Module 7 and dispatched in Module 8.
+It is the **decision-synthesis mechanism** of CDS—while the formal **Decision** object itself is recorded in Module 7 and dispatched in Module 8.
