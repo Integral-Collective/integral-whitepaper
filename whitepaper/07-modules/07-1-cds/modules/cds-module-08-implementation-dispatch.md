@@ -178,42 +178,33 @@ def compute_schedule(
 ```
 
 ------
-### Math Sketch — Dependency Ordering
+**Math Sketch — Dependency Ordering**
 
-Tasks are represented as a directed acyclic graph:
-
-(1)  G = (V, E)
-
-Where:
-
-• V = set of tasks (vertices)  
-• E = dependency edges  
-• A → B indicates “A must complete before B begins”
+Tasks are represented as a directed acyclic graph $G = (V, E)$:
+- vertices $V$: tasks
+- edges $A \rightarrow B$: "A must complete before B begins"
 
 A valid execution order is given by topological sort:
 
-(2)  Order = TopoSort(G)
+$$\text{Order} = \text{TopoSort}(G)$$
 
 If a cycle exists:
 
-(3)  ∃ (v₁, …, v_k) such that v₁ → … → v_k → v₁
+$$\exists (v_1, \dots, v_k) : v_1 \rightarrow \dots \rightarrow v_k \rightarrow v_1$$
 
 Then CDS returns:
-
-• a conflict report  
-• a revision request (routed back to CDS Modules 4–6 or OAD)
+- a conflict report
+- a revision request (routed back to CDS Modules 4–6 or OAD)
 
 ---
 
-### Semantic Summary
+**Semantic Summary**
 
 Module 8 ensures that:
+- CDS decisions become **coordinated, executable action**
+- COS knows *what to do, when, and with what resources*
+- OAD knows *whether follow-up design work is required*
+- ITC knows *if and how labor weighting or urgency should change*
+- FRS knows *what to monitor once implementation begins*
 
-• CDS decisions become coordinated, executable action  
-• COS knows what to do, when, and with what resources  
-• OAD knows whether follow-up design work is required  
-• ITC knows if and how labor weighting or urgency should change  
-• FRS knows what to monitor once implementation begins  
-
-Without Module 8, governance would stall at symbolic agreement.  
-With Module 8, every CDS decision becomes a full implementation blueprint, tightly coupled to feedback and review.
+Without Module 8, governance would stall at symbolic agreement. With Module 8, every CDS decision becomes a **full implementation blueprint**, tightly coupled to feedback and review.
