@@ -229,45 +229,42 @@ def record_cross_node_labor(
 ```
 
 ------
-### Math Sketch — Node Equivalence & Cross-Node Credits
+**Math Sketch — Node Equivalence & Cross-Node Credits**
 
-Let each node n have:
-
-• E_n = ecological constraint  
-• S_n = material scarcity  
-• L_n = labor pressure  
-• I_n = infrastructure strength  
+Let each node $n$ have:
+- $E_n$ = ecological constraint
+- $S_n$ = material scarcity
+- $L_n$ = labor pressure
+- $I_n$ = infrastructure strength
 
 Composite index:
 
-(1)  K_n = max( w_E E_n + w_S S_n + w_L L_n + w_I I_n , K_min )
+$$K_n = \max\left(w_E E_n + w_S S_n + w_L L_n + w_I I_n,\; K_{\min}\right)$$
 
 Raw equivalence:
 
-(2)  φ_{a→b}^{raw} = K_b / K_a
+$$\phi_{a \to b}^{\text{raw}} = \frac{K_b}{K_a}$$
 
 Bounded equivalence:
 
-(3)  φ_{a→b} = min( 1 + Δ_max , max( 1 − Δ_max , φ_{a→b}^{raw} ) )
+$$\phi_{a \to b} = \min\!\left(1+\Delta_{\max},\; \max\!\left(1-\Delta_{\max},\; \phi_{a \to b}^{\text{raw}}\right)\right)$$
 
 Account migration:
 
-(4)  C_b = C_a · φ_{a→b}
+$$C_b = C_a \cdot \phi_{a \to b}$$
 
 Cross-node labor:
 
-(5)  C_h = W_m · φ_{m→h}
+$$C_h = W_m \cdot \phi_{m \to h}$$
 
 Where:
+- $W_m$ = weighted contribution in host node
+- $C_h$ = credited contribution in home node
 
-• W_m = weighted contribution in host node  
-• C_h = credited contribution in home node  
+Because equivalence is **bounded, public, and non-exchangeable**, this mechanism preserves fairness **without enabling arbitrage**.
 
-Because equivalence is bounded, public, and non-exchangeable, this mechanism preserves fairness without enabling arbitrage.
-_
+---
 
 **In Plain Language**
 
-> Module 6 ensures that “one ITC” retains coherent meaning across diverse conditions—without ever becoming a currency, an exchange rate, or a speculative layer.
-
-------
+> Module 6 ensures that "one ITC" retains coherent meaning across diverse conditions—without ever becoming a currency, an exchange rate, or a speculative layer.
