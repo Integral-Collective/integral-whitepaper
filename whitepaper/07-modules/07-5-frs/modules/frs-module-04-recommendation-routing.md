@@ -499,7 +499,7 @@ Let $\text{risk}(s_i) \in [0,1]$ be modeled risk score for scenario $s_i$.
 
 FRS-4 can support a recommendation by referencing:
 
-$$\Delta = \text{risk}(\text{status\_quo}) - \text{risk}(\text{combined\_intervention})$$
+$$\Delta = \text{risk}(\text{status quo}) - \text{risk}(\text{combined intervention})$$
 
 A large $\Delta$ increases confidence in the relevance of the recommendation, but does not create executive authority.
 
