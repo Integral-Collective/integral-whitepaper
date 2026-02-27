@@ -50,3 +50,30 @@ All actionable decisions remain within CDS governance.
 │ ├── frs-module-06-longitudinal-memory.md
 │ ├── frs-module-07-federated-intelligence.md
 │ └── frs-08-full-orchestration.md
+
+
+
+---
+
+## Relationship to Other Subsystems
+
+| Subsystem | Interaction with FRS |
+|----------|---------------------|
+| CDS | Receives structured signals and recommendations for democratic deliberation |
+| OAD | Supplies ecological, lifecycle, and design performance data |
+| COS | Provides operational throughput, bottlenecks, and capacity indicators |
+| ITC | Contributes labor distribution, fairness, and participation signals |
+
+---
+
+## Guiding Principle
+
+FRS ensures that Integral remains:
+
+- adaptive
+- self-correcting
+- empirically grounded
+- historically aware
+- democratically accountable
+
+It enables **learning without centralized control** and **foresight without technocratic authority**.
