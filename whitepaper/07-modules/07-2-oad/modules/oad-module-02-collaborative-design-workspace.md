@@ -196,24 +196,22 @@ In a real implementation, geometric merges and CAD-level reconciliation are hand
 
 ------
 
-### Math Sketch — Branch Preference Scoring
+**Math Sketch — Branch Preference Scoring**
 
-For each version v, assume we have:
+For each version $v$, assume we have:
+- $E_v$ = eco-impact score, normalized to $[0,1]$, where **lower is better**
+- $F_v$ = feasibility score, normalized to $[0,1]$, where **higher is better**
 
-• E_v = eco-impact score, normalized to [0,1], where lower is better  
-• F_v = feasibility score, normalized to [0,1], where higher is better  
+Convert ecological impact into a "goodness" signal:
 
-Convert ecological impact into a “goodness” signal:
-
-(1)  G_v^eco = 1 − E_v
+$$G^{eco}_v = 1 - E_v$$
 
 Define a combined preference score:
 
-(2)  P_v = α G_v^eco + β F_v  
-     with α ≥ 0, β ≥ 0, and α + β = 1
+$$P_v = \alpha G^{eco}_v + \beta F_v \quad \text{with} \quad \alpha,\beta \ge 0,\ \alpha+\beta=1$$
 
-Given two branches v_a and v_b, the workspace prefers v_a if:
+Given two branches $v_a$ and $v_b$, the workspace prefers $v_a$ if:
 
-(3)  P_{v_a} ≥ P_{v_b}
+$$P_{v_a} \ge P_{v_b}$$
 
-In words: choose the branch that jointly minimizes ecological footprint and maximizes feasibility, according to tunable weights. This is a soft recommendation, not a command; human designers can still retain versions for cultural, aesthetic, or context-specific reasons the metrics do not capture.
+In words: choose the branch that jointly minimizes ecological footprint and maximizes feasibility, according to tunable weights. This is a **soft recommendation**, not a command; human designers can still retain versions for cultural, aesthetic, or context-specific reasons the metrics do not capture.
