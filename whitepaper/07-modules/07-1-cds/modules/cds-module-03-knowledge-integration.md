@@ -161,36 +161,22 @@ def build_context_model(
 Everything is organized so downstream modules can evaluate **what is actually possible and responsible**.
 
 ------
-### Math Sketch — Multi-Criteria Indicator Aggregation
+**Math Sketch — Multi-Criteria Indicator Aggregation**
 
 Module 3 often needs to normalize heterogeneous indicators so that Modules 4–6 can reason about them systematically.
 
 Let:
-
-- E_j = ecological indicators
-- R_j = resource indicators
-- L_j = labor indicators
-- S_j = social/fairness indicators
+- $E_j$ = ecological indicators
+- $R_j$ = resource indicators
+- $L_j$ = labor indicators
+- $S_j$ = social/fairness indicators
 
 Normalize each using min–max scaling:
 
-```
-(1)
-x'_j = ( x_j − min(x_j) ) / ( max(x_j) − min(x_j) )
-```
+$$x'_j = \frac{x_j - \min(x_j)}{\max(x_j) - \min(x_j)}$$
 
 Then build a context score vector:
 
-```
-(2)
-C = [ α_E E',  α_R R',  α_L L',  α_S S' ]
-```
+$$\mathbf{C} = \left[ \alpha_E \mathbf{E}',\; \alpha_R \mathbf{R}',\; \alpha_L \mathbf{L}',\; \alpha_S \mathbf{S}' \right]$$
 
-where the α coefficients are **not chosen by Module 3**, but derived from:
-
-- CDS constitutional settings
-- ecological thresholds
-- COS capacity constraints
-- ITC fairness bounds
-
-This yields a usable representation of **context saturation** that Modules 4–6 can test proposals against.
+where the $\alpha$ coefficients are **not chosen by Module 3**, but derived from CDS constitutional settings, ecological thresholds, COS capacity constraints, and ITC fairness bounds. This yields a usable representation of **context saturation** that Modules 4–6 can test proposals against.
