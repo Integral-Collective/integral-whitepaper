@@ -172,30 +172,25 @@ def evaluate_review_request(
 ```
 
 ------
-### Mathematical Sketch — Divergence Trigger
+**Mathematical Sketch — Divergence Trigger**
 
 Let:
+- $M_t$ = modeled indicator vector
+- $R_t$ = observed indicator vector
 
-• M_t = modeled indicator vector  
-• R_t = observed indicator vector  
-
-Define divergence:
-
-(1)  D = √( Σ_i w_i ( M_i − R_i )² )
+$$D = \sqrt{\sum_i w_i (M_i - R_i)^2}$$
 
 If:
 
-(2)  D > τ  →  review triggered
+$$D > \tau \Rightarrow \text{review triggered}$$
 
-------
+---
 
 **Final Conceptual Distinction (Important)**
 
-| Function                                         | Module        |
+| Function | Module |
 | ------------------------------------------------ | ------------- |
-| Resolve **value conflict at decision time**      | **Module 9**  |
+| Resolve **value conflict at decision time** | **Module 9** |
 | Revise decisions **after real-world divergence** | **Module 10** |
 
 This separation is what makes CDS **both humane and adaptive** — capable of meaning-level resolution *and* long-term self-correction without authoritarian override.
-
-------
