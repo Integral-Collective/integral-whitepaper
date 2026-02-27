@@ -260,31 +260,29 @@ def build_valuation_profile_from_oad(
 ```
 
 ------
-### Math Sketch — Lifecycle Labor & Repairability
+**Math Sketch — Lifecycle Labor & Repairability**
 
 Let:
-
-• H_life = expected lifespan (hours)  
-• I_maint = maintenance interval (hours)  
-• h_event = labor hours per maintenance event  
+- $H_{\text{life}}$ = expected lifespan (hours)
+- $I_{\text{maint}}$ = maintenance interval (hours)
+- $h_{\text{event}}$ = labor hours per maintenance event
 
 Then:
 
-(1)  N_events = H_life / I_maint
+$$N_{\text{events}} = \frac{H_{\text{life}}}{I_{\text{maint}}}$$
 
 Average labor per event:
 
-(2)  h̄ = L_total / N_events
+$$\bar{h} = \frac{L_{\text{total}}}{N_{\text{events}}}$$
 
 Define repairability index:
 
-(3)  R_rep = 1 / ( 1 + h̄ / H_0 )
+$$R_{\text{rep}} = \frac{1}{1 + \bar{h} / H_0}$$
 
 Lifecycle burden:
 
-(4)  B_life = α · norm(L_total) + (1 − α) · norm(downtime)
+$$B_{\text{life}} = \alpha \cdot \text{norm}(L_{\text{total}}) + (1 - \alpha) \cdot \text{norm}(\text{downtime})$$
 
-From ITC’s perspective:
-
-• Higher B_life → higher access-value per unit of service  
-• Lower B_life → durable, low-maintenance designs → lower access-value
+From ITC's perspective:
+- Higher $B_{\text{life}}$ → higher access-value per unit of service
+- Lower $B_{\text{life}}$ → durable, low-maintenance designs → lower access-value
