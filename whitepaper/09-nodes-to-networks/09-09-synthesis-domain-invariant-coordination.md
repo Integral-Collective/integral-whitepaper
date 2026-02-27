@@ -33,9 +33,9 @@ Thus, Integral’s macro layer is best understood as **domain-agnostic machinery
 **9.9.3 A Unified Formal Summary**
 
 The macro layer can be summarized in a single functional relation:
-$$
-\text{Disturbance} \Rightarrow \text{Observable State} \Rightarrow \text{Scope Detection} \Rightarrow \text{Threshold Regime} \Rightarrow \text{Temporary Envelope} \Rightarrow \text{Coordinated Adaptation} \Rightarrow \text{Dissolution}
-$$
+
+$$\text{Disturbance} \Rightarrow \text{Observable State} \Rightarrow \text{Scope Detection} \Rightarrow \text{Threshold Regime} \Rightarrow \text{Temporary Envelope} \Rightarrow \text{Coordinated Adaptation} \Rightarrow \text{Dissolution}$$
+
 Nothing in this chain requires price signals, a central planner, or permanent governance institutions. The architecture relies on **measurement, legibility, constraint propagation, and bounded deliberation**.
 
 **9.9.4 Implication for Scale**
