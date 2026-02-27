@@ -139,46 +139,44 @@ def deliberate(
 ```
 
 ------
-### Math Sketch — Objection Aggregation
+**Math Sketch — Objection Aggregation**
 
 In deliberation, objections must be:
+- aggregated
+- normalized
+- merged when duplicates arise
+- distinguished by severity and scope
 
-• aggregated  
-• normalized  
-• merged when duplicates arise  
-• distinguished by severity and scope  
+Let each objection $o_i$ have severity $s_i \in [0,1]$ and scope $w_i \in [0,1]$.
 
-Let each objection o_i have severity s_i ∈ [0,1] and scope w_i ∈ [0,1].
+Define **objection influence**:
 
-Define objection influence:
-
-(1)  I(o_i) = s_i · w_i
+$$I(o_i) = s_i \cdot w_i$$
 
 Cluster objections using cosine similarity on embeddings:
 
-(2)  sim(o_a, o_b) = ( e(o_a) · e(o_b) ) / ( ||e(o_a)|| · ||e(o_b)|| )
+$$\text{sim}(o_a, o_b) = \frac{e(o_a)\cdot e(o_b)}{\|e(o_a)\| \|e(o_b)\|}$$
 
-Objections within similarity threshold τ_obj are merged:
+Objections within similarity threshold $\tau_{obj}$ are merged:
 
-(3)  O_k = ⋃_{i : sim(o_i, O_k) > τ_obj} o_i
+$$O_k = \bigcup_{i:\, \text{sim}(o_i, O_k) > \tau_{obj}} o_i$$
 
-And the merged objection’s influence is:
+And the merged objection's influence is:
 
-(4)  I(O_k) = max_{o_i ∈ O_k} I(o_i)
+$$I(O_k) = \max_{o_i \in O_k} I(o_i)$$
 
 This ensures even a small minority with high-severity, high-scope objections cannot be silenced or diluted.
 
 ---
 
-### Semantic Summary
+**Semantic Summary**
 
-Module 5 is where the community actually thinks. It provides a structured deliberation environment where:
+Module 5 is where the community actually *thinks.* It provides a structured deliberation environment where:
+- ideas are clarified
+- misunderstandings resolved
+- objections aggregated
+- scenarios modified
+- constraint reports interpreted
+- cooperation emerges organically
 
-• ideas are clarified  
-• misunderstandings resolved  
-• objections aggregated  
-• scenarios modified  
-• constraint reports interpreted  
-• cooperation emerges organically  
-
-The output is a refined, consensus-ready set of options that Module 6 can evaluate using weighted preference gradients — keeping CDS a human-centered deliberation engine, not just an automated evaluator.
+The output is a refined, consensus-ready set of options that Module 6 can evaluate using weighted preference gradients—keeping CDS a **human-centered deliberation engine**, not just an automated evaluator.
