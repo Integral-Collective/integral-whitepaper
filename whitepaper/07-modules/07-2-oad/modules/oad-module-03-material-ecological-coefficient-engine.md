@@ -259,43 +259,37 @@ def compute_eco_assessment(
 Later, when Module 4 (Lifecycle & Maintainability Modeling) is applied, `repairability_norm` is recalculated using empirically modeled disassembly, maintenance, and refurbishment characteristics, replacing this provisional estimate.
 
 ------
-### Math Sketch — Eco Score Aggregation
+**Math Sketch — Eco Score Aggregation**
 
 Let per-design aggregates (from BOM + material coefficients) be:
-
-• E = total embodied energy (MJ)  
-• C = total embodied carbon (kg CO₂e)  
-• T = toxicity index (average 0–1)  
-• R = recyclability index (average 0–1)  
-• W = total water use (L)  
-• L = total land use (m²)  
-• ρ = repairability index (0–1; higher = easier to repair / maintain)
+- $E$ = total embodied energy (MJ)
+- $C$ = total embodied carbon (kg CO₂e)
+- $T$ = toxicity index (average 0–1)
+- $R$ = recyclability index (average 0–1)
+- $W$ = total water use (L)
+- $L$ = total land use (m²)
+- $\rho$ = repairability index (0–1; higher = easier to repair / maintain)
 
 Normalize each dimension:
 
-(1)  E_n = norm(E),  C_n = norm(C),  T_n = norm(T),  
-     R_n = norm(R),  W_n = norm(W),  L_n = norm(L),  ρ_n = norm(ρ)
+$$E_n = \text{norm}(E),\quad C_n = \text{norm}(C),\quad T_n = \text{norm}(T),\quad R_n = \text{norm}(R),\quad W_n = \text{norm}(W),\quad L_n = \text{norm}(L),\quad \rho_n = \text{norm}(\rho)$$
 
 with:
 
-(2)  norm(X) = ( X − X_min ) / ( X_max − X_min ),  clamped to [0,1]
+$$\text{norm}(X) = \frac{X - X_{\min}}{X_{\max} - X_{\min}} \quad \text{clamped to } [0,1]$$
 
-Define eco_score as a weighted combination where high energy, carbon, toxicity, water, and land are worse, while higher recyclability and repairability are better:
+Define **eco score** as a weighted combination where high energy, carbon, toxicity, water, and land are worse, while higher recyclability and repairability are better:
 
-(3)  eco_score = w_E E_n + w_C C_n + w_T T_n + w_W W_n + w_L L_n  
-                 + w_R (1 − R_n) + w_ρ (1 − ρ_n)
+$$\text{eco score} = w_E E_n + w_C C_n + w_T T_n + w_W W_n + w_L L_n + w_R (1 - R_n) + w_\rho (1 - \rho_n)$$
 
 with:
 
-(4)  w_E + w_C + w_T + w_W + w_L + w_R + w_ρ = 1
+$$w_E + w_C + w_T + w_W + w_L + w_R + w_\rho = 1$$
 
 A basic pass/fail criterion:
 
-(5)  passed = True   if eco_score ≤ τ_eco  
-     passed = False  otherwise
+$$\text{passed} = \begin{cases} \text{True}, & \text{if } \text{eco score} \le \tau_{\text{eco}} \\ \text{False}, & \text{otherwise} \end{cases}$$
 
-where τ_eco is an ecologically conservative threshold chosen per sector.
+where $\tau_{\text{eco}}$ is an ecologically conservative threshold chosen per sector.
 
-In plain language:
-
-> The eco_score tells us how damaging a design is per unit of function, relative to alternatives. Lower is better. Designs exceeding ecological thresholds are flagged and returned for redesign rather than advanced toward production.
+> The eco score tells us **how damaging a design is per unit of function**, relative to the alternatives. Lower is better. Designs that exceed ecological thresholds are flagged and sent back for redesign instead of being advanced toward production.
