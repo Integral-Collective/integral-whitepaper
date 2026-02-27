@@ -190,30 +190,26 @@ def cluster_submissions(
 ```
 
 ------
-### Math Sketch — Clustering and Similarity
+**Math Sketch — Clustering and Similarity**
 
-Let there be `N` clusterable submissions `{ s_1, s_2, …, s_N }` with semantic embeddings `e(s_i) ∈ ℝ^d`.
+Let there be $N$ clusterable submissions $\\{s_1, s_2, \dots, s_N\\}$ with semantic embeddings $e(s_i) \in \mathbb{R}^d$.
 
-The goal is to partition them into `K` clusters `C_1, …, C_K` (with `K ≤ max_clusters`) such that submissions within each cluster are semantically similar.
+The goal is to partition them into $K$ clusters $C_1, \dots, C_K$ (with $K \leq \text{max\_clusters}$) such that submissions within each cluster are semantically similar.
 
-A standard objective (e.g., *k-means*) is:
+A standard objective (e.g. *k-means*) is:
 
-**(1)**  
-min_{C₁,…,C_K}  Σ_{k=1}^{K} Σ_{s_i ∈ C_k}  || e(s_i) − μ_k ||²
+$$\min_{C_1,\dots,C_K} \sum_{k=1}^{K} \sum_{s_i \in C_k} \left\| e(s_i) - \mu_k \right\|^2$$
 
-where the centroid of cluster `C_k` is:
+where the centroid of cluster $C_k$ is:
 
-**(2)**  
-μ_k = (1 / |C_k|) Σ_{s_i ∈ C_k} e(s_i)
+$$\mu_k = \frac{1}{\lvert C_k \rvert} \sum_{s_i \in C_k} e(s_i)$$
 
 Cluster similarity can be assessed via cosine similarity of centroids:
 
-**(3)**  
-sim(C_a, C_b) = ( μ_a · μ_b ) / ( ||μ_a|| · ||μ_b|| )
+$$\text{sim}(C_a, C_b) = \frac{\mu_a \cdot \mu_b}{\|\mu_a\|\,\|\mu_b\|}$$
 
 For **theme extraction**, a simple heuristic is to:
-
-- extract top-`n` key phrases from all texts in `C_k`, or
+- extract top-$n$ key phrases from all texts in $C_k$, or
 - choose a label that maximizes semantic coherence within the cluster.
 
-The specific clustering algorithm and labeling method are implementation choices. What matters is that **Module 2 transforms a flat list of submissions into a structured, navigable representation of the decision space** — a prerequisite for contextual grounding, constraint checking, and deliberation in later CDS modules.
+The specific clustering algorithm and labeling method are implementation choices. What matters is that **Module 2 transforms a flat list of submissions into a structured, navigable representation of the decision space**—a prerequisite for contextual grounding, constraint checking, and deliberation in later CDS modules.
