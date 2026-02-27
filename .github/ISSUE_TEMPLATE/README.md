@@ -1,82 +1,95 @@
 # Issue Templates
 
-This directory contains structured templates used for **peer review and revision proposals** related to the Integral whitepaper.
+This directory contains structured templates used for peer review and revision proposals for the Integral whitepaper.
 
-The goal is to ensure feedback remains:
+Templates provide structure, but **review is a human process**. GitHub does not automate critique or revision decisions.
 
-- precise
-- actionable
-- technically grounded
+---
+
+## How to Participate in Review
+
+### Step 1 — Identify Your Intent
+
+Choose one:
+
+#### Critique
+Use when you want to:
+
+- question assumptions
+- highlight ambiguity
+- raise conceptual concerns
+- suggest alternative interpretations
+- identify mathematical or technical uncertainty
+
+Open an issue using **critique.md**.
+
+---
+
+#### Revision
+Use when you want to:
+
+- propose concrete edits
+- supply rewritten text
+- correct math or code
+- add clarifications or expansions
+
+Open an issue using **revision.md**, or submit a pull request referencing the issue.
+
+---
+
+## Recommended Workflow
+
+1. Critique issues surface problems
+2. Discussion clarifies position
+3. Revision issues or pull requests propose solutions
+4. Maintainers evaluate and merge or reject
+
+Critique does not require revision.  
+Revision may reference critique.
+
+---
+
+## What GitHub Automates (and does not)
+
+GitHub provides:
+
+- template prefill
+- discussion threads
+- version history
+- PR merging
+
+GitHub does not provide:
+
+- automatic approval
+- consensus enforcement
+- review routing
+- decision arbitration
+
+All resolution remains collaborative.
+
+---
+
+## Review Philosophy
+
+Integral peer review is:
+
+- open
 - transparent
-- easy to track over time
+- evidence-based
+- non-adversarial
+- iterative
+- traceable
+
+The goal is **collective refinement**, not debate victory.
 
 ---
 
-## Available Templates
+## Future Process Enhancements
 
-### Critique Template (`critique.md`)
+As review scales, additional workflows may include:
 
-Use this template when:
-
-- identifying conceptual issues
-- questioning assumptions
-- proposing alternative interpretations
-- flagging logical gaps or ambiguity
-- raising methodological concerns
-- reporting unclear explanations
-
-This template supports structured academic-style critique.
-
----
-
-### Revision Template (`revision.md`)
-
-Use this template when:
-
-- proposing edits or additions
-- suggesting rewritten passages
-- improving clarity or precision
-- offering expanded explanations
-- correcting mathematical or technical content
-
-This template is intended to accompany pull requests when applicable.
-
----
-
-## Workflow Philosophy
-
-The Integral project encourages:
-
-- open critique
-- rigorous reasoning
-- collaborative refinement
-- traceable intellectual evolution
-
-Templates exist to prevent:
-
-- vague criticism
-- unstructured debate
-- lost context
-- revision ambiguity
-
----
-
-## Relationship to GitHub Features
-
-Templates integrate with:
-
-- Issues → critique and discussion
-- Pull Requests → revision proposals
-- Discussions → higher-level dialogue
-
----
-
-## Future Expansion
-
-Additional templates may be introduced as peer review scales, including:
-
-- mathematical review
-- implementation review
-- subsystem-specific critique
-- simulation validation
-- governance impact review
+- subsystem review tracks
+- mathematical review board
+- simulation validation pipeline
+- governance review loops
+- CDS-mediated dispute resolution
