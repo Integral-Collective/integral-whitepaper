@@ -194,7 +194,7 @@ def cluster_submissions(
 
 Let there be $N$ clusterable submissions $\\{s_1, s_2, \dots, s_N\\}$ with semantic embeddings $e(s_i) \in \mathbb{R}^d$.
 
-The goal is to partition them into $K$ clusters $C_1, \dots, C_K$ (with $K \leq \text{max\_clusters}$) such that submissions within each cluster are semantically similar.
+The goal is to partition them into $K$ clusters $C_1, \dots, C_K$ (with $K \leq \text{max clusters}$) such that submissions within each cluster are semantically similar.
 
 A standard objective (e.g. *k-means*) is:
 
