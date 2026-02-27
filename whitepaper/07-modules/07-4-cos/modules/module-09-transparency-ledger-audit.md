@@ -367,7 +367,6 @@ def run_cos_ledger_pipeline(
     }
 ```
 
-------
 **Math Sketch — Conservation, Coverage, and Trust**
 
 **1. Labor Conservation**
@@ -468,3 +467,5 @@ COS Module 9 ensures that **nothing important disappears into narrative fog**:
 is recorded, chained, and auditable.
 
 This allows Integral to compute value, fairness, and sustainability **from reality itself**, not from prices, authority, or trust claims.
+
+------
