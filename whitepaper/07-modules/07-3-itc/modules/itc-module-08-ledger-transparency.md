@@ -330,62 +330,53 @@ def verify_ledger_integrity() -> bool:
 ```
 
 ------
-### Math Sketch — Hash-Chained Audit Log
+**Math Sketch — Hash-Chained Audit Log**
 
 We can think of the ledger as an ordered sequence:
 
-(1)  L = { e₁, e₂, …, e_N }
+$$L = \\{ e_1, e_2, \dots, e_N \\}$$
 
-Each entry e_k contains:
-
-• payload P_k (event metadata)  
-• previous hash H_{k−1}  
-• its own hash H_k  
+Each entry $e_k$ contains:
+- a payload $P_k$ (event metadata),
+- the previous hash $H_{k-1}$,
+- and its own hash $H_k$.
 
 Define:
 
-(2)  H_k = h( serialize(P_k) , H_{k−1} )
+$$H_k = h\left( P_k,\ H_{k-1} \right)$$
 
-where:
+where $h$ is a cryptographic hash (e.g. SHA-256), and $H_0$ is a fixed constant (or `None` encoded).
 
-• h is a cryptographic hash (e.g., SHA-256)  
-• H₀ is a fixed constant (or None encoded)  
-
-Tamper-evidence property:
-
-If any payload P_i is modified, then H_i changes and all downstream hashes become invalid.
+**Tamper-evidence property:** if any payload $P_i$ is modified, then $\tilde{H}_i \ne H_i$ and all downstream hashes break.
 
 ---
 
-### Transparency & Calculation Traceability
+**Transparency & Calculation Traceability**
 
-For a particular good g at time t, suppose Module 5 computed an access-value:
+For a particular good $g$ at time $t$, suppose Module 5 computed an access-value:
 
-(3)  C_g(t) = f( L_g , E_g , S_g , R_g , M_g , … , Π(t) )
+$$C_g(t) = f\left( L_g, E_g, S_g, R_g, M_g, \dots,\ \Pi(t) \right)$$
 
 where:
-
-• L_g = labor components  
-• E_g = ecological coefficients  
-• S_g = scarcity factors  
-• R_g = repairability / lifecycle burden  
-• M_g = material intensity & embodied energy  
-• Π(t) = policy parameters active at time t  
+- $L_g$ = labor components
+- $E_g$ = ecological coefficients
+- $S_g$ = scarcity factors
+- $R_g$ = repairability / lifecycle burden
+- $M_g$ = material intensity & embodied energy
+- $\Pi(t)$ = policy parameters at time $t$
 
 The ledger stores:
-
-• labor_event_recorded + labor_weight_applied entries supporting L_g  
-• policy_updated entries reconstructing Π(t)  
-• access_value_quoted entries storing the component breakdown used by f  
+- `labor_event_recorded` + `labor_weight_applied` entries supporting $L_g$
+- `policy_updated` entries reconstructing $\Pi(t)$
+- `access_value_quoted` entries storing the component breakdown used by $f$
 
 Thus anyone can reconstruct:
-
-1) which data fed the valuation function  
-2) which policy bounds were active  
-3) what access-value was produced and why  
+1. which data fed the valuation function,
+2. which policy bounds were active,
+3. what access-value was produced and why.
 
 This directly answers:
 
-“How did you arrive at 37 ITCs for this bicycle?”
+> "How did you arrive at 37 ITCs for this bicycle?"
 
 …without a market, a price system, or a black-box bureaucracy.
