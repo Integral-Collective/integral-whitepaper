@@ -279,7 +279,9 @@ $$\sigma_s = \frac{D_s - S_s}{S_s}$$
 
 Map $\sigma_s$ to a bounded multiplier $m_s$ using a smooth saturating function:
 
-$$m_s = \begin{cases} 1 + B_{\max}\tanh(\sigma_s) & \text{if } \sigma_s > 0 \\ 1 + C_{\max}\tanh(\sigma_s) & \text{if } \sigma_s \le 0 \end{cases}$$
+If $\sigma_s > 0$ (shortage): $\quad m_s = 1 + B_{\max}\tanh(\sigma_s)$
+
+If $\sigma_s \le 0$ (surplus): $\quad m_s = 1 + C_{\max}\tanh(\sigma_s)$
 
 Then apply to the CDS-defined base weight:
 
