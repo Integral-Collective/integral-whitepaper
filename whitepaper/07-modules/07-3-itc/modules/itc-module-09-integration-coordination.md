@@ -336,29 +336,25 @@ def coordination_tick_for_node(node_id: str) -> Optional[ITCPolicySnapshot]:
 ```
 
 ------
-### Math Sketch — Policy as a Bounded Function of Signals
+**Math Sketch — Policy as a Bounded Function of Signals**
 
 Let:
-
-• π(t) = ITC policy parameter vector at time t (weight bands, scarcity coefficients, selected decay rule, etc.)  
-• S(t) = signal vector at time t (COS demand/supply ratios, FRS stress/anomaly indicators, OAD updates)  
-• B = CDS-imposed bounds and admissible sets (min/max multipliers, allowed decay-rule IDs, fairness caps)  
+- $\pi(t)$ = ITC policy parameter vector at time $t$ (weight bands, scarcity coefficients, selected decay rule, etc.)
+- $S(t)$ = signal vector at time $t$ (COS demand/supply ratios, FRS stress/anomaly indicators, OAD updates)
+- $B$ = CDS-imposed bounds and admissible sets (min/max multipliers, allowed decay rule IDs, fairness caps)
 
 A proposed update is:
 
-(1)  π̃(t) = π(t) + Δπ( S(t) )
+$$\tilde{\pi}(t) = \pi(t) + \Delta\pi(S(t))$$
 
 Then CDS applies a bounded projection:
 
-(2)  π(t⁺) = proj_B( π̃(t) )
+$$\pi(t^+) = \mathrm{proj}_B\big(\tilde{\pi}(t)\big)$$
 
-Where:
-
-• proj_B clamps continuous parameters (e.g., multipliers)  
-• proj_B enforces discrete admissibility (e.g., selected DecayRule must belong to the CDS-approved set)  
+Where $\mathrm{proj}_B$ clamps continuous parameters (e.g., multipliers) and enforces discrete admissibility (e.g., the selected `DecayRule` must be in the CDS-approved set).
 
 ---
 
-Plain-language summary:
+**Plain-language summary**
 
-Module 9 keeps ITC responsive to real conditions (scarcity, bottlenecks, ecological stress, fairness anomalies) while remaining legitimate and non-coercive. It proposes small parameter shifts, routes them through CDS, and activates a new auditable policy snapshot for Modules 1–8 to follow—without turning ITC into a market, a currency, or an autonomous governor.
+Module 9 keeps ITC **responsive** to real conditions (scarcity, bottlenecks, ecological stress, fairness anomalies) while remaining **legitimate** and **non-coercive**: it proposes small parameter shifts, routes them through CDS, and then activates a new auditable policy snapshot for Modules 1–8 to follow—without turning ITC into a market, a currency, or an autonomous governor.
