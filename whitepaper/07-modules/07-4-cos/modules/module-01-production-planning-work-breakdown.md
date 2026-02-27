@@ -223,10 +223,10 @@ $$
 H_\tau^{\text{expected}} = \sum_{s \in S \,\mid\, k(s)=\tau} h_s \cdot B
 $$
 
-This yields:
+This yields the dictionary value `expected_labor_hours_by_skill[τ]`:
 
 $$
-\texttt{expected\_labor\_hours\_by\_skill}[\tau] = H_\tau^{\text{expected}}
+H_\tau^{\text{expected}}
 $$
 
 **2. Expected material usage**
@@ -237,10 +237,10 @@ $$
 M_j^{\text{expected}} = \sum_{s \in S} m_{s,j} \cdot B
 $$
 
-so:
+This yields the dictionary value `expected_materials_kg[j]`:
 
 $$
-\texttt{expected\_materials\_kg}[j] = M_j^{\text{expected}}
+M_j^{\text{expected}}
 $$
 
 **3. Rough expected cycle time**
