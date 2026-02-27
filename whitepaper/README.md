@@ -11,7 +11,7 @@ The whitepaper is organized to support:
 
 ---
 
-## Structure
+## Structure [UPDATE!]
 
 ### Conceptual Foundations
 
