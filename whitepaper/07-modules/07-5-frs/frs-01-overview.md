@@ -310,7 +310,8 @@ The sailboat does not become “cheaper” or “scarcer” through market force
 
 ------
 
-![](/Users/peter/Documents/Integral White Paper Collect/IMAGES FOR GITHUB/Mermaid Chart - Create complex, visual diagrams with text.-2025-12-14-025928.png)
+![Integral system diagram](../../../assets/integral-system-diagram-15.png)<img width="468" height="15" alt="image" src="https://github.com/user-attachments/assets/01bcd617-27f6-47bf-9c7d-53a8197b599f" />
+
 
 Above Diagram: *FRS Architecture Diagram — Adaptive Intelligence Without Command*
 This diagram illustrates the internal architecture and signal flow of the Feedback & Review System (FRS), Integral’s adaptive intelligence layer. FRS continuously ingests structured signals from across the federation—including COS production metrics, OAD design updates, ITC valuation dynamics, CDS governance indicators, ecological monitoring data, and inter-node exchanges—and integrates them into a unified perceptual field. This intake function (Module 1) does not interpret or judge conditions; it normalizes, timestamps, and contextualizes signals so the system’s current state can be perceived coherently across time and scale.
