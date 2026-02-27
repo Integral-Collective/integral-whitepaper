@@ -206,19 +206,16 @@ def summarize_plan_for_itc(plan: COSProductionPlan, oad_profile: OADValuationPro
 ```
 **Math Sketch — Labor & Material Budgets**
 
-Let there be a set of labor steps $S = \{ s_1, s_2, \dots, s_n \}$ from OAD.
+Let there be a set of labor steps $S = \\{ s_1, s_2, \dots, s_n \\}$ from OAD.
 
 For each step $s$:
-
-- $h_s$ = base hours per unit  
-- $k(s)$ = skill tier of step $s$ (e.g. “high”, “medium”)  
-- $m_{s,j}$ = kg of material $j$ required per unit  
+- $h_s$ = base hours per unit
+- $k(s)$ = skill tier of step $s$ (e.g. "high", "medium")
+- $m_{s,j}$ = kg of material $j$ required per unit
 
 Given batch size $B$:
 
----
-
-### 1. Expected labor by skill tier
+**1. Expected labor by skill tier**
 
 For each skill tier $\tau$:
 
@@ -229,12 +226,10 @@ $$
 This yields:
 
 $$
-\texttt{expected\_labor\_hours\_by\_skill}[\tau] = H_\tau^{\text{expected}}
+\text{expected\_labor\_hours\_by\_skill}[\tau] = H_\tau^{\text{expected}}
 $$
 
----
-
-### 2. Expected material usage
+**2. Expected material usage**
 
 For each material $j$:
 
@@ -245,12 +240,10 @@ $$
 so:
 
 $$
-\texttt{expected\_materials\_kg}[j] = M_j^{\text{expected}}
+\text{expected\_materials\_kg}[j] = M_j^{\text{expected}}
 $$
 
----
-
-### 3. Rough expected cycle time
+**3. Rough expected cycle time**
 
 If we assume an effective parallelism factor $P$ (how many tasks can run concurrently), then:
 
@@ -266,15 +259,13 @@ $$
 
 This is crude, but enough for initial planning and ITC shadow valuation; more detailed versions can use full critical-path analysis over the task dependency graph.
 
-------
+---
 
 **Plain-Language Interpretation**
 
-- Module 1 takes OAD’s abstract recipe for “how to build one bicycle” and turns it into **specific COS tasks** with hours, skills, tools, and materials for **this node and this batch**.
+- Module 1 takes OAD's abstract recipe for "how to build one bicycle" and turns it into **specific COS tasks** with hours, skills, tools, and materials for **this node and this batch**.
 - It computes:
-  - “We expect ~10 expert hours, 25 medium hours, and 15 low-skill hours for this batch.”
-  - “We will consume ~40 kg of aluminum, 12 kg of rubber, 3 kg of steel,” etc.
-  - “With our current ability to run tasks in parallel, this batch will take ~X hours.”
-- ITC now has a **numerical starting point** for the bicycle’s eventual access-value—before we even cut the first tube—which will later be corrected by real data from COS Modules 4–5 and FRS.
-
-------
+  - "We expect ~10 expert hours, 25 medium hours, and 15 low-skill hours for this batch."
+  - "We will consume ~40 kg of aluminum, 12 kg of rubber, 3 kg of steel," etc.
+  - "With our current ability to run tasks in parallel, this batch will take ~X hours."
+- ITC now has a **numerical starting point** for the bicycle's eventual access-value—before we even cut the first tube—which will later be corrected by real data from COS Modules 4–5 and FRS.
