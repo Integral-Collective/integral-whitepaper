@@ -206,49 +206,64 @@ def summarize_plan_for_itc(plan: COSProductionPlan, oad_profile: OADValuationPro
 ```
 **Math Sketch — Labor & Material Budgets**
 
-Let there be a set of labor steps $S = { s_1, s_2, \dots, s_n }$ from OAD.
+Let there be a set of labor steps $S = \{ s_1, s_2, \dots, s_n \}$ from OAD.
 
 For each step $s$:
 
-- $h_s$ = base hours per unit
-- $k(s)$ = skill tier of step $s$ (e.g. “high”, “medium”)
-- $m_{s,j}$ = kg of material $j$ required per unit
+- $h_s$ = base hours per unit  
+- $k(s)$ = skill tier of step $s$ (e.g. “high”, “medium”)  
+- $m_{s,j}$ = kg of material $j$ required per unit  
 
 Given batch size $B$:
 
-1. Expected labor by skill tier
+---
+
+### 1. Expected labor by skill tier
 
 For each skill tier $\tau$:
+
 $$
 H_\tau^{\text{expected}} = \sum_{s \in S \,\mid\, k(s)=\tau} h_s \cdot B
 $$
+
 This yields:
+
 $$
-\text{expected\_labor\_hours\_by\_skill}[\tau] = H_\tau^{\text{expected}}
+\texttt{expected\_labor\_hours\_by\_skill}[\tau] = H_\tau^{\text{expected}}
 $$
 
+---
 
-1. Expected material usage
+### 2. Expected material usage
 
 For each material $j$:
+
 $$
 M_j^{\text{expected}} = \sum_{s \in S} m_{s,j} \cdot B
 $$
+
 so:
+
 $$
-\text{expected\_materials\_kg}[j] = M_j^{\text{expected}}
+\texttt{expected\_materials\_kg}[j] = M_j^{\text{expected}}
 $$
 
-1. Rough expected cycle time
+---
+
+### 3. Rough expected cycle time
 
 If we assume an effective parallelism factor $P$ (how many tasks can run concurrently), then:
+
 $$
 H_{\text{total}} = \sum_{\tau} H_\tau^{\text{expected}}
 $$
+
 A simple heuristic is:
+
 $$
 T_{\text{cycle}}^{\text{expected}} \approx \frac{H_{\text{total}}}{\max(P, 1)}
 $$
+
 This is crude, but enough for initial planning and ITC shadow valuation; more detailed versions can use full critical-path analysis over the task dependency graph.
 
 ------
@@ -261,7 +276,5 @@ This is crude, but enough for initial planning and ITC shadow valuation; more de
   - “We will consume ~40 kg of aluminum, 12 kg of rubber, 3 kg of steel,” etc.
   - “With our current ability to run tasks in parallel, this batch will take ~X hours.”
 - ITC now has a **numerical starting point** for the bicycle’s eventual access-value—before we even cut the first tube—which will later be corrected by real data from COS Modules 4–5 and FRS.
-
-------
 
 ------
