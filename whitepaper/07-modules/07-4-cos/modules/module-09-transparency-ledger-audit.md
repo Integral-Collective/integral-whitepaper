@@ -373,19 +373,11 @@ def run_cos_ledger_pipeline(
 
 Weighted labor by skill tier $k$:
 
-$$
-H_{\text{weighted}}^{(k)}
-=
-\sum_{e \in E_{\text{labor}}^{(k)}} h_e \cdot w_e
-$$
+$$H_{\text{weighted}}^{(k)} = \sum_{e \in E_{\text{labor}}^{(k)}} h_e \cdot w_e$$
 
 Total weighted labor across all skill tiers:
 
-$$
-H_{\text{weighted}}
-=
-\sum_k H_{\text{weighted}}^{(k)}
-$$
+$$H_{\text{weighted}} = \sum_k H_{\text{weighted}}^{(k)}$$
 
 This quantity **must match** (within tolerance) the labor cost used by ITC valuation. Any discrepancy indicates a data or logic error upstream.
 
@@ -395,27 +387,15 @@ This quantity **must match** (within tolerance) the labor cost used by ITC valua
 
 Total quantity of material $m$ consumed:
 
-$$
-Q_m
-=
-\sum_{e \in E_{\text{material}}} q_{e,m}
-$$
+$$Q_m = \sum_{e \in E_{\text{material}}} q_{e,m}$$
 
 Ecological impact for material $m$:
 
-$$
-EII_m
-=
-\sum_{e \in E_{\text{material}}} q_{e,m} \cdot \mathrm{eii}_{e,m}
-$$
+$$EII_m = \sum_{e \in E_{\text{material}}} q_{e,m} \cdot \mathrm{eii}_{e,m}$$
 
 Aggregate ecological impact across all materials:
 
-$$
-EII_{\text{total}}
-=
-\sum_m EII_m
-$$
+$$EII_{\text{total}} = \sum_m EII_m$$
 
 This same aggregate must be used by **both ITC and FRS**, ensuring ecological consistency.
 
@@ -425,20 +405,11 @@ This same aggregate must be used by **both ITC and FRS**, ensuring ecological co
 
 Observed failure rate:
 
-$$
-r_{\text{fail}}
-=
-\frac{U_{\text{failed}}}
-     {U_{\text{completed}} + U_{\text{failed}}}
-$$
+$$r_{\text{fail}} = \frac{U_{\text{failed}}}{U_{\text{completed}} + U_{\text{failed}}}$$
 
 Deviation from projected failure rate triggers review:
 
-$$
-\left| r_{\text{fail}} - r_{\text{proj}} \right| > \varepsilon
-\;\Rightarrow\;
-\text{trigger redesign or process review}
-$$
+$$\left| r_{\text{fail}} - r_{\text{proj}} \right| > \varepsilon \;\Rightarrow\; \text{trigger redesign or process review}$$
 
 This is how **empirical reality corrects design assumptions**.
 
@@ -448,9 +419,7 @@ This is how **empirical reality corrects design assumptions**.
 
 Hash-chained event integrity:
 
-$$
-h_i = H(e_i,\, h_{i-1})
-$$
+$$h_i = H(e_i,\, h_{i-1})$$
 
 Any modification to a prior event breaks all downstream hashes, making tampering **detectable rather than impossible**.
 
@@ -468,4 +437,3 @@ is recorded, chained, and auditable.
 
 This allows Integral to compute value, fairness, and sustainability **from reality itself**, not from prices, authority, or trust claims.
 
-------
