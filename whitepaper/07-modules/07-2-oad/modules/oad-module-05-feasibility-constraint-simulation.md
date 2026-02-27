@@ -242,23 +242,23 @@ def run_feasibility_simulation(version: DesignVersion) -> SimulationResult:
 ```
 
 ------
-### Math Sketch — Feasibility Aggregation
+**Math Sketch — Feasibility Aggregation**
 
-For scenarios S = { s₁, …, sₙ }, each produces a local feasibility score f_s ∈ [0,1].
+For scenarios $S = \\{s_1, \dots, s_n\\}$, each produces a local feasibility score $f_s \in [0,1]$.
 
 Overall feasibility:
 
-(1)  F = (1 / n) Σ_{s ∈ S} f_s
+$$F = \frac{1}{n} \sum_{s \in S} f_s$$
 
-Safety margins (e.g., yield factor):
+Safety margins (e.g. yield factor):
 
-(2)  yield_factor_s = σ_y / σ_max(s)
+$$\text{yield factor}_s = \frac{\sigma_y}{\sigma_{\max}(s)}$$
 
-If any scenario violates safety thresholds (e.g., σ_max > σ_y), the design is flagged with an explicit failure mode and routed back for redesign or risk-aware handling downstream.
+If any scenario violates safety thresholds (e.g. $\sigma_{\max} > \sigma_y$), the design is flagged with an explicit failure mode and routed back for redesign or risk-aware handling downstream.
 
 ---
 
-### Plain-language summary
+**Plain-language summary**
 
-> Module 5 answers: “Does this design survive reality?”  
-> It ensures that ecological virtue and lifecycle durability are matched by physical feasibility, safety margins, and manufacturability, preventing fragile or idealized designs from advancing unchecked.
+> Module 5 answers: *"Does this design survive reality?"*
+> It ensures that ecological virtue and lifecycle durability are matched by **physical feasibility, safety margins, and manufacturability**, preventing fragile or idealized designs from advancing unchecked.
