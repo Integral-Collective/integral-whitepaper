@@ -299,7 +299,7 @@ Expected conceptual outputs:
 
 Let $x_t$ be a current metric and $x_0$ a baseline:
 
-$$\Delta_{\%} = \frac{x_t - x_0}{\lvert x_0 \rvert + \epsilon}$$
+$$\Delta_{\text{pct}} = \frac{x_t - x_0}{\lvert x_0 \rvert + \epsilon}$$
 
 **2. Persistence**
 
