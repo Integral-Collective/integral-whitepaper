@@ -226,7 +226,7 @@ $$
 This yields:
 
 $$
-\text{expected\_labor\_hours\_by\_skill}[\tau] = H_\tau^{\text{expected}}
+\texttt{expected\_labor\_hours\_by\_skill}[\tau] = H_\tau^{\text{expected}}
 $$
 
 **2. Expected material usage**
@@ -240,7 +240,7 @@ $$
 so:
 
 $$
-\text{expected\_materials\_kg}[j] = M_j^{\text{expected}}
+\texttt{expected\_materials\_kg}[j] = M_j^{\text{expected}}
 $$
 
 **3. Rough expected cycle time**
