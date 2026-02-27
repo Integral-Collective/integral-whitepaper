@@ -420,3 +420,43 @@ for r in model.scenario_results:
 ```
 
 ------
+**Math Sketches**
+
+**1. Constraint Margin and Breach**
+
+For a "max" constraint $x \le T$:
+
+$$\text{margin} = T - x$$
+
+For a "min" constraint $x \ge T$:
+
+$$\text{margin} = x - T$$
+
+A breach occurs when $\text{margin} < 0$.
+
+**2. Illustrative Repair-Drift Projection**
+
+Let $d$ be repair drift, humidity $H$, salinity $S$:
+
+$$d' = d + a \max(0, H - H_0) + b \max\left(0, \frac{S - S_0}{0.1}\right)$$
+
+If redesign reduces drift by factor $r$:
+
+$$d'' = (1 - r)\, d'$$
+
+**3. Bounded Risk Score from Breaches**
+
+Let $\mathcal{C}$ be constraints, $\mathcal{B}\subseteq \mathcal{C}$ breached:
+
+$$f = \frac{\lvert\mathcal{B}\rvert}{\lvert\mathcal{C}\rvert}$$
+
+where $d$ is a normalized breach-depth term.
+
+---
+
+**Plain-Language Summary**
+
+FRS Module 3 turns "named problems" into **explicit boundaries**:
+- it expresses viability as **constraints with margins**,
+- explores futures as **scenario envelopes** (not plans),
+- and produces structured outputs that FRS-4 can route and FRS-5 can translate—while leaving all authority and choice downstream to CDS and the operational systems.
