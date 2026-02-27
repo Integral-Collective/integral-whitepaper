@@ -1,7 +1,6 @@
-2. A HUMAN-LEVEL ANALOGY 
-_
+# 2. A HUMAN-LEVEL ANALOGY 
 
-2.1 A Pre-Industrial Village
+## 2.1 A Pre-Industrial Village
 
 Imagine a small pre-industrial village of a few dozen families. Over time, the villagers notice that the natural environment stays stable through cycles of feedback and gradual adjustment. No authority controls this order; it emerges from information flow. They decide their own society can function the same way—through shared knowledge, open coordination, and transparent responsibility.
 
@@ -19,24 +18,35 @@ Neighboring villages adopt similar methods, forming a loose cooperative network 
 
 Modern Integral builds directly on this logic—using advanced tools to scale the same cooperative, feedback-driven structure across larger populations and more complex production systems.
 
-2.2 Principles Illustrated by the Analogy
+## 2.2 Principles Illustrated by the Analogy
 
 This village example demonstrates several core principles that underpin Integral’s architecture. Although the tools are simple and the scale is small, the underlying logic mirrors what a modern cooperative economic system requires.
 
-First, coordination can occur without markets or centralized authority when information is transparent and shared. The villagers rely on open meetings, public records, and routine feedback to align their actions. Order emerges from participation rather than command or price signals.
+**First**, coordination can occur without markets or centralized authority when information is transparent and shared. The villagers rely on open meetings, public records, and routine feedback to align their actions. Order emerges from participation rather than command or price signals.
 
-Second, equitable access does not require monetary exchange. A communal ledger that records labor, materials used, and the ecological impact of production provides a reliable basis for fair distribution. Access reflects the realities of what was required to produce a good—not bargaining power, scarcity manipulation, or competition.
+**Second**, equitable access does not require monetary exchange. A communal ledger that records labor, materials used, and the ecological impact of production provides a reliable basis for fair distribution. Access reflects the realities of what was required to produce a good—not bargaining power, scarcity manipulation, or competition.
 
-Third, value arises directly from embodied effort and resource use. When a good requires significant labor, specialized skill, or limited materials, its access requirement reflects those inputs. This includes consideration for how production affects the external environment, ensuring designs remain regenerative and sustainable rather than merely efficient for the producers.
+**Third**, value arises directly from embodied effort and resource use. When a good requires significant labor, specialized skill, or limited materials, its access requirement reflects those inputs. This includes consideration for how production affects the external environment, ensuring designs remain regenerative and sustainable rather than merely efficient for the producers.
 
-Fourth, the system integrates human need as a structural feature. Access adjustments ensure that individuals with reduced physical capacity or other limitations are not disadvantaged. Equity is embedded in the calculation itself, not granted afterward as charity.
+**Fourth**, the system integrates human need as a structural feature. Access adjustments ensure that individuals with reduced physical capacity or other limitations are not disadvantaged. Equity is embedded in the calculation itself, not granted afterward as charity.
 
-Fifth, the community remains adaptive because decisions and allocations are continuously revisited. Shifts in resources, workloads, or needs are incorporated through recurring feedback cycles. Stability comes not from rigid rules but from ongoing correction and refinement.
+**Fifth**, the community remains adaptive because decisions and allocations are continuously revisited. Shifts in resources, workloads, or needs are incorporated through recurring feedback cycles. Stability comes not from rigid rules but from ongoing correction and refinement.
 
-Sixth, cooperative organization reduces waste, unnecessary labor, and conflict. Shared design decisions, transparent resource accounting, and collaborative planning minimize duplicated effort and increase overall efficiency. As the community improves its methods, the embodied effort of producing valued goods decreases—lowering access requirements organically.
+**Sixth**, cooperative organization reduces waste, unnecessary labor, and conflict. Shared design decisions, transparent resource accounting, and collaborative planning minimize duplicated effort and increase overall efficiency. As the community improves its methods, the embodied effort of producing valued goods decreases—lowering access requirements organically.
 
-Finally, modest post-scarcity can emerge through cooperation. As efficiency rises and waste declines, essential goods and even some valued items become reliably obtainable with less effort. Prosperity is defined by sufficiency and reliability, not surplus accumulation.
+**Finally**, modest post-scarcity can emerge through cooperation. As efficiency rises and waste declines, essential goods and even some valued items become reliably obtainable with less effort. Prosperity is defined by sufficiency and reliability, not surplus accumulation.
 
 Together, these principles show that the foundational elements of Integral—transparency, equitable contribution, open design, distributed coordination, ecological awareness, and continuous feedback—are not technological inventions but enduring organizational dynamics. Modern Integral uses advanced tools only to scale these dynamics into a fully viable cooperative economic system.
 
+**Table 2 — Village Practices: Integral System Equivalents**
+
+| Village Practice / Mechanism                                 | Integral Equivalent System                | Functional Role in Integral                                  |
+| ------------------------------------------------------------ | ----------------------------------------- | ------------------------------------------------------------ |
+| **Open meetings for decision-making**                        | **CDS — Collaborative Decision System**   | Democratic deliberation, collective policy formation, and public review of needs and constraints. Ensures that design and access decisions reflect shared understanding rather than authority. |
+| **Shared notebook for tools, infrastructure ideas, and designs** | **OAD — Open Access Design**              | Common knowledge repository for open blueprints, design standards, and environmental considerations. Supports iterative improvement and sustainable design choices. |
+| **Communal ledger tracking labor, materials, skill differences, and ecological impact** | **ITC — Integral Time Credits**           | Contribution accounting *and* access valuation. ITC value for goods reflects embodied labor, resource use, tooling cost, and ecological impact. Includes need-based adjustments so impaired individuals access goods fairly. Prevents price dynamics while ensuring responsible use of shared resources. |
+| **Rotating work teams coordinating daily tasks and production** | **COS — Cooperative Organization System** | Distributed workflow coordination, task allocation, and resource flow management. COS generates the raw data—labor hours, resource withdrawal, tool usage—used by ITC to determine access value. |
+| **Household visits gathering workload, need, and resource feedback** | **FRS — Feedback & Review System**        | Continuous monitoring of performance, resource balance, ecological conditions, and household needs. Feeds adjustments back into COS planning and ITC valuation, preventing shortages, drift, or inequities. |
+
+------
 ![Human-level analogy table](../assets/human-analogy-table-01.png)
