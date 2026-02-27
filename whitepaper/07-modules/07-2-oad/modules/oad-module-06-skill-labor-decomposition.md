@@ -311,30 +311,27 @@ def build_labor_profile(
 ```
 
 ------
-### Math Sketch — Labor Aggregation & Lifetime Effort
+**Math Sketch — Labor Aggregation & Lifetime Effort**
 
 Let:
-
-• S_p = set of production steps  
-• S_m = set of maintenance steps  
-• For each step s:  
-  – h_s = estimated hours  
-  – τ_s = skill tier  
+- $S_p$ = set of production steps
+- $S_m$ = set of maintenance steps
+- For each step $s$, let $h_s$ = estimated hours and $\tau_s$ = skill tier
 
 Total production hours:
 
-(1)  H_prod = Σ_{s ∈ S_p} h_s
+$$H_{\text{prod}} = \sum_{s \in S_p} h_s$$
 
 Total maintenance hours over life (computed from lifecycle interval + lifespan):
 
-(2)  H_maint = Σ_{s ∈ S_m} h_s · N_events
+$$H_{\text{maint}} = \sum_{s \in S_m} h_s \cdot N_{\text{events}}$$
 
 Total lifetime labor embodied in one unit:
 
-(3)  H_total = H_prod + H_maint
+$$H_{\text{total}} = H_{\text{prod}} + H_{\text{maint}}$$
 
-Hours by skill tier k ∈ {low, medium, high, expert}:
+Hours by skill tier $k \in \\{\text{low},\text{medium},\text{high},\text{expert}\\}$:
 
-(4)  H_k = Σ_{s : τ_s = k} h_s
+$$H_k = \sum_{s:\, \tau_s = k} h_s$$
 
 These values feed directly into ITC access valuation and COS scheduling.
