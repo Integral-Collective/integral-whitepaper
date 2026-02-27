@@ -390,4 +390,75 @@ def run_capacity_and_constraint_analysis(
 ```
 
 ------
+**Math Sketch — Bottleneck Identification & Severity**
+
+Let:
+- $S = \\{ s_1, \dots, s_n \\}$ be the set of task types (definitions).
+- For each step $s$:
+  - Estimated total hours:
+
+$$
+T^{est}_s = \sum_{i \in I_s} t^{est}_i
+$$
+
+  - Actual total hours:
+
+$$
+T^{act}_s = \sum_{i \in I_s} t^{act}_i
+$$
+
+  - Deviation ratio:
+
+$$
+D_s = \frac{T^{act}_s}{\max(T^{est}_s, \epsilon)}
+$$
+
+- Let $B_s$ = number of blocked instances of step $s$.
+- Let $N_s$ = total instances of step $s$.
+- Blocked ratio:
+
+$$
+R_s^{blocked} = \frac{B_s}{\max(N_s, 1)}
+$$
+
+Define a **severity score** for step $s$:
+
+$$
+\text{severity}_s = \min\Big(1,\; \alpha \cdot (D_s - 1)_+ + \beta \cdot R_s^{blocked} \Big)
+$$
+
+where:
+- $(x)_+ = \max(x, 0)$
+- $\alpha, \beta$ are tuning constants (e.g., give more weight to time deviation or blocking)
+- $\text{severity}_s \in [0, 1]$
+
+Steps with high severity are candidates for:
+- **OAD redesign** (if the issue is structural)
+- **ITC weighting/training adjustment** (if it's a skill bottleneck)
+- **COS local fixes** (new tools, better sequencing)
+- **FRS systemic flags** (if this pattern persists across plans)
+
+Once the most severe step is identified (or top-$k$), that step is (for this batch) the **bottleneck**: its capacity constrains total output.
+
+---
+
+**Plain-Language Example (Still Bicycle / Guitar Behind the Scenes)**
+
+- The plan says each **wheel truing** should take 0.5 hours.
+- Execution data shows:
+  - $D_{\text{truing}} = 1.6$ (it's taking 60% longer)
+  - $R^{blocked}_{\text{truing}} = 0.35$ (35% of instances end up blocked at some point)
+- Module 5 computes a high severity score and classifies it:
+  - notes show "no qualified worker," "tool unavailable," "waiting for materials"
+  - If notes skew toward "no qualified worker" → SKILL constraint
+  - If toward "tool unavailable" → TOOL constraint, etc.
+- It then sends:
+  - To **ITC**: "Consider a temporary +0.15 weight increase on truing tasks; highlight these tasks for training volunteers."
+  - To **OAD**: "Step `wheel_truing` is consistently 60% over estimate; evaluate design/fixturing."
+  - To **FRS**: "Chronic skill bottleneck at truing; potential burnout risk and production instability."
+
+Over time:
+- Training expands, tools improve, design is simplified.
+- The severity score drops, throughput stabilizes.
+- ITC weighting for that step can relax, and the **access-value of the good trends downward**, reflecting real systemic efficiency, not price games.
 
