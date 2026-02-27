@@ -158,50 +158,32 @@ def run_decay_cycle(now: datetime, policy_snapshot_id: Optional[str] = None) -> 
 **Math Sketch — Gentle Demurrage, Democratically Bounded**
 
 For an account with balance $B_0$ at last decay time $t_0$, and current time $t$:
-
 - $\Delta t = t - t_0$ in days
-
 - $G$ = inactivity grace period (days)
-
 - $H$ = half-life in days (CDS-approved)
-
 - $\lambda$ = maximum annual decay fraction (e.g., 0.30)
-
 - $B_{\min}$ = protected floor (optional)
 
-  
+**1. No decay within grace**
 
-1. **No decay within grace:**
+If $\Delta t \le G$, then $f(\Delta t) = 1$.
 
-If $\Delta t \le G$, then $f(\Delta t)=1$.
+**2. Exponential decay beyond grace**
 
+Let $\Delta t' = \Delta t - G$.
 
-2. **Exponential decay beyond grace:**
+$$f_{\text{exp}}(\Delta t') = 2^{-\Delta t'/H}$$
 
-Let $\Delta t'=\Delta t-G$.
-$$
-f_{\text{raw}}(\Delta t') = 2^{-\Delta t'/H}
-$$
+**3. Annual loss bound (minimum factor)**
 
-3. **Annual loss bound (minimum factor):**
+$$f_{\text{floor}}(\Delta t) = 1 - \lambda \cdot \min\!\left(1, \frac{\Delta t}{365}\right)$$
 
-$$
-f_{\min}(\Delta t)=1-\lambda\cdot \min\left(1,\frac{\Delta t}{365}\right)
-$$
+where the resulting balance is bounded below by a protected floor:
 
-*where the resulting balance is bounded below by a protected floor:*
+$$B(t) = \max\!\left(B_{\min},\, B_0 \cdot f(\Delta t)\right)$$
 
-$$
-B(t) = \max\!\left(B_{\min},\, B_0 \cdot f(\Delta t)\right)
-$$
+**4. Final factor and balance**
 
-
-4. **Final factor and balance:**
-
-$$
-f(\Delta t)=\max\left(f_{\min}(\Delta t), f_{\text{raw}}(\Delta t')\right)
-$$
+$$f(\Delta t) = \max\!\left(f_{\text{floor}}(\Delta t),\, f_{\text{exp}}(\Delta t')\right)$$
 
 **In plain language:** decay begins only after a grace window, proceeds slowly, is bounded against harsh drops, and exists to prevent long-term stockpiling—not to punish pauses in participation. FRS watches distributional outcomes, and CDS can adjust $G$, $H$, $\lambda$, or $B_{\min}$ if distortion appears.
-
-------
