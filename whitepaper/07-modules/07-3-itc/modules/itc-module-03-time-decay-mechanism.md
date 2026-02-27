@@ -155,39 +155,53 @@ def run_decay_cycle(now: datetime, policy_snapshot_id: Optional[str] = None) -> 
 
 ------
 
-### Math Sketch — Gentle Demurrage, Democratically Bounded
+**Math Sketch — Gentle Demurrage, Democratically Bounded**
 
-For an account with balance B₀ at last decay time t₀, and current time t:
+For an account with balance $B_0$ at last decay time $t_0$, and current time $t$:
 
-• Δt = t − t₀ (days)  
-• G = inactivity grace period (days)  
-• H = half-life in days (CDS-approved)  
-• λ = maximum annual decay fraction (e.g., 0.30)  
-• B_min = protected floor (optional)
+- $\Delta t = t - t_0$ in days
 
-1) No decay within grace
+- $G$ = inactivity grace period (days)
 
-If Δt ≤ G, then:
+- $H$ = half-life in days (CDS-approved)
 
-(1)  f(Δt) = 1
+- $\lambda$ = maximum annual decay fraction (e.g., 0.30)
 
-2) Exponential decay beyond grace
+- $B_{\min}$ = protected floor (optional)
 
-Let Δt' = Δt − G
+  
 
-(2)  f_raw(Δt') = 2^( − Δt' / H )
+1. **No decay within grace:**
 
-3) Annual loss bound (minimum factor)
+If $\Delta t \le G$, then $f(\Delta t)=1$.
 
-(3)  f_min(Δt) = 1 − λ · min( 1 , Δt / 365 )
 
-4) Final factor
+2. **Exponential decay beyond grace:**
 
-(4)  f(Δt) = max( f_min(Δt) , f_raw(Δt') )
+Let $\Delta t'=\Delta t-G$.
+$$
+f_{\text{raw}}(\Delta t') = 2^{-\Delta t'/H}
+$$
 
-5) Final balance with protected floor
+3. **Annual loss bound (minimum factor):**
 
-(5)  B(t) = max( B_min , B₀ · f(Δt) )
+$$
+f_{\min}(\Delta t)=1-\lambda\cdot \min\left(1,\frac{\Delta t}{365}\right)
+$$
 
-In plain language:
-Decay begins only after a grace window, proceeds slowly, is bounded against harsh drops, and exists to prevent long-term stockpiling—not to punish pauses in participation. FRS monitors distributional outcomes, and CDS can adjust G, H, λ, or B_min if distortion appears.
+*where the resulting balance is bounded below by a protected floor:*
+
+$$
+B(t) = \max\!\left(B_{\min},\, B_0 \cdot f(\Delta t)\right)
+$$
+
+
+4. **Final factor and balance:**
+
+$$
+f(\Delta t)=\max\left(f_{\min}(\Delta t), f_{\text{raw}}(\Delta t')\right)
+$$
+
+**In plain language:** decay begins only after a grace window, proceeds slowly, is bounded against harsh drops, and exists to prevent long-term stockpiling—not to punish pauses in participation. FRS watches distributional outcomes, and CDS can adjust $G$, $H$, $\lambda$, or $B_{\min}$ if distortion appears.
+
+------
