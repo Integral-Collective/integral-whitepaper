@@ -38,3 +38,15 @@ All actionable decisions remain within CDS governance.
 ---
 
 ## Folder Structure
+07-5-frs/
+├── frs-01-overview.md
+├── frs-02-architecture-code.md
+├── modules/
+│ ├── frs-module-01-signal-intake.md
+│ ├── frs-module-02-diagnostic-classification.md
+│ ├── frs-module-03-constraint-modeling.md
+│ ├── frs-module-04-recommendation-routing.md
+│ ├── frs-module-05-democratic-sensemaking.md
+│ ├── frs-module-06-longitudinal-memory.md
+│ ├── frs-module-07-federated-intelligence.md
+│ └── frs-08-full-orchestration.md
