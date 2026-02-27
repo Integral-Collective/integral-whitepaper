@@ -218,67 +218,53 @@ This evidence is routed back to:
 - **Module 8** (next-generation optimization).
 
 ------
-### Math Sketch — Reuse as a Distributed Utility Signal
+**Math Sketch — Reuse as a Distributed Utility Signal**
 
-For each design version v:
+For each design version $v$:
+- $R_v$ = total reuse count
+- $C_v$ = climate diversity
+- $S_v$ = sector diversity
 
-• R_v = total reuse count  
-• C_v = climate diversity  
-• S_v = sector diversity  
+Define a **commons utility index**:
 
-Define a commons utility index:
+$$U_v = \alpha R_v + \beta C_v + \gamma S_v \quad \text{with } \alpha, \beta, \gamma > 0$$
 
-(1)  U_v = α R_v + β C_v + γ S_v  
-     with α, β, γ > 0
-
-Interpretation:
-
-Designs with high U_v:
-
-• work across many contexts  
-• fail less often  
-• stabilize ITC valuation  
-• become default infrastructure templates  
+Interpretation — designs with high $U_v$:
+- work across many contexts,
+- fail less often,
+- stabilize ITC valuation,
+- become default infrastructure templates.
 
 ---
 
-### Relationship to COS and ITC
+**Relationship to COS and ITC**
 
 **COS (Production Coordination)**
 
 COS uses the repository to:
-
-• select climate-appropriate, sector-certified designs  
-• reduce planning overhead  
-• lower deployment failure risk  
-• accelerate cooperative bootstrapping  
+- select climate-appropriate, sector-certified designs,
+- reduce planning overhead,
+- lower deployment failure risk,
+- accelerate cooperative bootstrapping.
 
 **ITC (Access-Value Stabilization)**
 
-Because each repository entry is backed by:
+Because each repository entry is backed by certified ecological data, lifecycle labor models, real operational performance, and known reuse patterns, ITC can treat high-utility designs as **statistically stable references**:
+- access values fluctuate less,
+- improvements cascade system-wide,
+- labor coefficients converge toward reality,
+- ecological impacts are empirically grounded.
 
-• certified ecological data  
-• lifecycle labor models  
-• real operational performance  
-• known reuse patterns  
-
-ITC can treat high-utility designs as statistically stable references:
-
-• access values fluctuate less  
-• improvements cascade system-wide  
-• labor coefficients converge toward reality  
-• ecological impacts are empirically grounded  
-
-This is learning-based economic calculation, not price speculation.
+This is **learning-based economic calculation**, not price speculation.
 
 ---
 
-### Plain-Language Summary
+**Plain-Language Summary**
 
-> Module 10 ensures that Integral never forgets what it has learned.  
+> **Module 10 ensures that Integral never forgets what it has learned.**
 >
-> Every tool, machine, and system becomes part of a living evolutionary memory.  
-> Designs that work spread. Designs that fail are revised.  
-> Nothing disappears into proprietary darkness.  
+> Every tool, machine, and system becomes part of a living evolutionary memory.
+> Designs that work spread. Designs that fail are revised.
+> Nothing disappears into proprietary darkness.
 >
 > The civilization itself becomes the engineer.
