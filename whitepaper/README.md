@@ -1,110 +1,87 @@
-# Integral Whitepaper
+# Integral Whitepaper (GitHub Edition)
 
-This directory contains the full draft of the **Integral Whitepaper**, structured as a modular, progressively layered argument describing the theoretical foundations, architectural logic, and operational subsystems of the Integral socio-economic framework.
+This directory contains the GitHub-native, sectioned version of the Integral whitepaper.
 
-The whitepaper is organized to support:
+The structure is designed for:
 
-- conceptual clarity
-- incremental peer review
-- modular revision
-- transparent evolution across versions
-
----
-
-## Structure [UPDATE!]
-
-### Conceptual Foundations
-
-- **00-abstract.md**  
-  High-level summary of the Integral framework and its purpose.
-
-- **01-introduction.md**  
-  Context, motivation, and framing of systemic challenges motivating Integral.
-
-- **02-human-analogy.md**  
-  The cybernetic human-system analogy establishing recursive coordination principles.
-
-- **03-what-integral-solves.md**  
-  Structural problems addressed by Integral across economic, ecological, and social domains.
-
-- **04-what-integral-creates.md**  
-  Positive capabilities and institutional affordances produced by Integral.
-
-- **05-the-5-core-subsystems.md**  
-  Overview of the five interacting subsystems:
-  CDS, OAD, COS, ITC, and FRS.
-
-- **06-how-the-five-systems-work-as-one.md**  
-  Cross-system orchestration and recursive cybernetic integration.
+- readable navigation
+- granular peer review and diff tracking
+- modular expansion of technical sections
+- future site and publication rendering
 
 ---
 
-### Operational Architecture
+# Reading Order
 
-- **07-modules/**  
-  Detailed module-level specifications for each subsystem, including:
-  - architecture
-  - signal flows
-  - governance interfaces
-  - mathematical sketches
-  - orchestration logic
+## Foundations
 
----
-
-## Reading Guidance
-
-### First-time readers
-Recommended order:
-1. Abstract
-2. Introduction
-3. Human analogy
-4. Problem framing
-5. System creation logic
-6. Subsystem overview
-7. System orchestration
-8. Module deep dive
+- [00 — Abstract](00-abstract.md)
+- [01 — Introduction](01-introduction.md)
+- [02 — Human Analogy](02-human-analogy.md)
+- [03 — What Integral Solves](03-what-integral-solves.md)
+- [04 — What Integral Creates](04-what-integral-creates.md)
+- [05 — The 5 Core Subsystems](05-the-5-core-subsystems.md)
+- [06 — How the Five Systems Work as One](06-how-the-five-systems-work-as-one.md)
 
 ---
 
-### Researchers & reviewers
-You may jump directly to:
-- subsystem modules
-- mathematical sketches
-- orchestration sections
-- governance interfaces
+## System Architecture
 
-All sections are designed to be **independently reviewable yet structurally coherent**.
+- [07 — Modules](07-modules/README.md)
 
 ---
 
-## Draft Status
+## Worked Example
 
-This whitepaper represents an evolving research document.
-
-Changes occur through:
-- critique
-- revision proposals
-- architectural refinement
-- empirical and modeling feedback
-
-Each section maintains traceable history through repository versioning.
+- [08 — Community Shuttle Example](08-community-shuttle-example.md)
 
 ---
 
-## Relationship to the Repository
+## Scaling, Reciprocity, and Transition
 
-- The **root README** describes repository governance and contribution workflow.
-- This directory contains the **actual research manuscript**.
-- The **modules directory** provides technical subsystem specification depth.
+- [09 — Nodes to Networks](09-nodes-to-networks/README.md)
+- [10 — Internodal Reciprocity](10-internodal-reciprocity/README.md)
+- [11 — Transition, Adoption, & Implementation](11-transition-adoption-implementation.md)
 
 ---
 
-## Purpose
+# Directory Map
 
-The whitepaper exists to:
+### `00–06`
+Core conceptual framing and system definition.
 
-- formalize the Integral framework
-- enable rigorous critique
-- support interdisciplinary dialogue
-- guide implementation research
-- document a transparent design pathway toward a federated cooperative socio-economic system
+### `07-modules/`
+Subsystem architecture and module specifications for CDS, OAD, COS, ITC, and FRS.
+
+### `08-community-shuttle-example.md`
+Concrete application example demonstrating integrated subsystem operation in a social-service context.
+
+### `09-nodes-to-networks/`
+Scaling logic, scope detection, coordination envelopes, and federation case studies.
+
+### `10-internodal-reciprocity/`
+Internodal cooperation primitives, cross-node labor recognition, material/capacity provisioning, and assurance/anti-arbitrage mechanisms.
+
+### `11-transition-adoption-implementation.md`
+Transition pathway, proto-nodes, hybrid interface mechanisms, resilience safeguards, and long-term system emergence.
+
+---
+
+# Conventions
+
+## Naming and ordering
+- Files and folders use the format: `NN-title-slug`
+- Subfiles use: `NN-XX-subtitle-slug.md`
+- Slugs are lowercase and hyphenated
+
+---
+
+## Headings
+- Section title: `# NN. Title`
+- Subsections: `## NN.X`
+- Sub-subsections: `### NN.X.Y`
+
+---
+
+## Images and diagrams
+Images are stored in section-level `assets/` folders and referenced via relative paths:
