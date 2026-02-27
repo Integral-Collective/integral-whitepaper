@@ -267,27 +267,22 @@ def generate_labor_forecast(
 
 ------
 
-### Math Sketch — Shortage Index and Weight Adjustment
+**Math Sketch — Shortage Index and Weight Adjustment**
 
-For each skill tier s:
+For each skill tier $s$:
+- $D_s$ = forecasted demand (hours) over horizon $H$
+- $S_s$ = forecasted supply (hours) over the same horizon
 
-• D_s = forecasted demand (hours) over horizon H  
-• S_s = forecasted supply (hours) over the same horizon  
+Define **shortage index**:
 
-Define shortage index (with ε > 0 to prevent division by zero):
+$$\sigma_s = \frac{D_s - S_s}{S_s}$$
 
-(1)  σ_s = ( D_s − S_s ) / ( S_s + ε )
+Map $\sigma_s$ to a bounded multiplier $m_s$ using a smooth saturating function:
 
-Map σ_s to a bounded multiplier m_s using a smooth saturating function:
-
-(2)  m_s =
-       1 + B_max · tanh( σ_s )   if σ_s > 0
-       1 + C_max · tanh( σ_s )   if σ_s ≤ 0
+$$m_s = \begin{cases} 1 + B_{\max}\tanh(\sigma_s) & \text{if } \sigma_s > 0 \\ 1 + C_{\max}\tanh(\sigma_s) & \text{if } \sigma_s \le 0 \end{cases}$$
 
 Then apply to the CDS-defined base weight:
 
-(3)  w'_s = w_base_s · m_s
+$$w'_s = w^{\text{base}}_s \cdot m_s$$
 
-Note:
-• ε is a small stabilizer ensuring numerical safety when forecasted supply is near zero  
-• These adjustments are policy hints only; CDS may accept them within approved bounds or deliberate when larger shifts are implied
+*Note:* these are **policy hints**. CDS can accept them within pre-approved bounds or deliberate when larger shifts are implied.
