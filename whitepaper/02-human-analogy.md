@@ -49,4 +49,4 @@ Together, these principles show that the foundational elements of Integral—tra
 | **Household visits gathering workload, need, and resource feedback** | **FRS — Feedback & Review System**        | Continuous monitoring of performance, resource balance, ecological conditions, and household needs. Feeds adjustments back into COS planning and ITC valuation, preventing shortages, drift, or inequities. |
 
 ------
-![Human-level analogy table](../assets/human-analogy-table-01.png)
+
