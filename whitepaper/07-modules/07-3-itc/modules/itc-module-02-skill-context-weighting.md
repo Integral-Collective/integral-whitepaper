@@ -197,37 +197,34 @@ def weight_labor_event(event: LaborEvent, policy: WeightingPolicy, policy_snapsh
 ```
 
 ------
-### Math Sketch — From Hours to Contribution Signal
+**Math Sketch — From Hours to Contribution Signal**
 
-For each valid labor event e:
-
-• h_e = raw hours  
-• s_e = skill tier  
-• type_e = task type  
+For each valid labor event $e$:
+- $h_e$ = raw hours
+- $s_e$ = skill tier
+- $\text{type}_e$ = task type
 
 Base weight:
 
-(1)  w_base(e) = w_skill(s_e) · m_task(type_e)
+$$w_{\text{base}}(e) = w_{\text{skill}}(s_e) \cdot m_{\text{task}}(\text{type}_e)$$
 
-Context scores in [-1, +1]:
-
-• U_e = urgency  
-• E_e = ecological sensitivity  
-• S_e = scarcity  
+Context scores in $[-1,+1]$:
+- $U_e$ = urgency
+- $E_e$ = ecological sensitivity
+- $S_e$ = scarcity
 
 Context factor:
 
-(2)  f_ctx(e) = clip( 1 + α_u U_e + α_e E_e + α_s S_e , c_min , c_max )
+$$f_{\text{ctx}}(e) = \text{clip}\Big(1 + \alpha_u U_e + \alpha_e E_e + \alpha_s S_e,\; c_{\min},\, c_{\max}\Big)$$
 
 Final multiplier:
 
-(3)  w_final(e) = clip( w_base(e) · f_ctx(e) , w_min , w_max )
+$$w_{\text{final}}(e) = \text{clip}\big(w_{\text{base}}(e) \cdot f_{\text{ctx}}(e),\; w_{\min},\, w_{\max}\big)$$
 
 Weighted contribution (in hour-equivalents):
 
-(4)  C_e = h_e · w_final(e)
+$$C_e = h_e \cdot w_{\text{final}}(e)$$
 
-In plain language:
-One hour is not automatically “one unit” of contribution; contextualized contribution is what ITC records—without wages, bidding, or markets.
+One hour is not automatically "one unit" of contribution; *contextualized* contribution is what ITC records—without wages, bidding, or markets.
 
-> A verified labor event becomes a weighted contribution signal only through CDS-bounded rules and real context signals (COS/FRS). Weighting does not grant bargaining power; it only produces proportional contribution accounting that later modules may credit.
+> A verified labor event becomes a *weighted contribution signal* only through **CDS-bounded rules** and **real context signals** (COS/FRS). Weighting does not grant bargaining power; it only produces proportional contribution accounting that later modules may credit.
