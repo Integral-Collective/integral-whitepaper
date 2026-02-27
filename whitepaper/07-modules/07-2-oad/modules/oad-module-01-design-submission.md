@@ -144,22 +144,21 @@ def intake_design_submission(
 
 ------
 
-### Math Sketch — Completeness Heuristic
+**Math Sketch — Completeness Heuristic**
 
 Let:
-
-• F = set of required fields  
-• f_i ∈ F = each required field  
-• I(f_i) = 1 if field f_i is present and non-empty, otherwise 0  
+- $F$ = set of required fields
+- $f_i \in F$ = each required field
+- $I(f_i) = 1$ if field $f_i$ is present and non-empty, otherwise $0$
 
 Define completeness score:
 
-(1)  C_complete = (1 / |F|) Σ_{f_i ∈ F} I(f_i)
+$$C_{\text{complete}} = \frac{1}{\lvert F \rvert} \sum_{f_i \in F} I(f_i)$$
 
 A submission is accepted if:
 
-(2)  C_complete ≥ τ_min
+$$C_{\text{complete}} \ge \tau_{\min}$$
 
-where τ_min is a configurable threshold (e.g., 0.7).
+where $\tau_{\min}$ is a configurable threshold (e.g., 0.7).
 
-In plain terms: a design enters OAD only when enough key fields are filled to make it processable by later modules.
+In plain terms: A design enters OAD only when enough key fields are filled to make it processable by later modules.
