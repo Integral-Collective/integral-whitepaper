@@ -1,216 +1,174 @@
 # Integral Whitepaper (Peer Review Repository)
 
-This repository contains the **Integral** technical whitepaper — a federated, post-monetary, cybernetically coordinated cooperative economic system — formatted as modular Markdown for transparent review, discussion, and revision tracking.
+This repository contains the **Integral technical whitepaper** — a federated, post-monetary, cybernetically coordinated cooperative economic system — structured as modular Markdown to enable transparent peer review, revision tracking, and distributed critique.
 
-## What this repo is for
-
-**Primary purpose:** enable a structured, public/transparent peer-review style process.
-
-Review happens through:
-- **Issues** (section-specific feedback, suggested changes, objections, questions)
-- **Pull Requests** (proposed edits to the text)
-- **Discussions** (open-ended conversation, conceptual debate, meta feedback)
-
-This repo is designed so contributors can cite exact files/sections, propose concrete edits, and keep debates organized.
+The repository functions as a **living technical document**, evolving through structured feedback rather than static publication.
 
 ---
 
-## How to read the whitepaper
+## Purpose of this Repository
+
+The primary goal is to support a **structured peer-review process** using GitHub’s native collaboration tools.
+
+Review occurs through:
+
+- **Issues** → critique and revision proposals
+- **Pull Requests** → concrete text edits
+- **Discussions** → open conceptual dialogue and meta analysis
+
+This structure enables precise section referencing, transparent argument evolution, and traceable revision history.
+
+---
+
+## How to Read the Whitepaper
 
 Start here:
-- `/whitepaper/README.md` (table of contents + reading order)
-- `/whitepaper/` (the full whitepaper broken into sections)
 
-Each section folder contains:
+- `/whitepaper/README.md` → table of contents + reading order
+- `/whitepaper/` → full whitepaper in modular sections
+
+Each section directory contains:
+
 - a local `README.md` for navigation
-- numbered `.md` files for subsections
+- numbered Markdown files for subsections
+- optional assets for diagrams
 
 ---
 
-## How to participate (review workflow)
+## Peer Review Workflow
 
-### Option A — Leave feedback (recommended for most people)
-1. Go to the relevant section file under `/whitepaper/…`
-2. Open **Issues** → **New issue**
-3. Choose the correct template:
-   - **Section Feedback** (most common)
-   - **Correction / Clarification**
-   - **Conceptual Objection**
-   - **Question**
+### Option A — Structured Feedback (recommended)
+
+1. Navigate to the relevant file under `/whitepaper/…`
+2. Open **Issues → New issue**
+3. Choose one of the available templates:
+
+   - **Critique / Objection** → identify problems or limitations
+   - **Revision Proposal** → suggest concrete improvements
+
 4. In the issue:
-   - link the file (and header) you’re referencing
+   - link the file and header
    - quote the smallest necessary snippet
-   - state your point clearly
-   - propose a fix if possible
+   - provide reasoning
+   - propose a fix if applicable
 
-### Option B — Propose edits directly (Pull Requests)
-1. Fork the repo
-2. Create a branch: `fix/short-description`
-3. Edit the relevant `.md` file(s)
+This ensures feedback remains specific, traceable, and actionable.
+
+---
+
+### Option B — Propose Edits (Pull Requests)
+
+1. Fork the repository
+2. Create a branch (`fix/short-description`)
+3. Edit relevant Markdown files
 4. Open a Pull Request
-5. In the PR description:
-   - reference related issue(s) (e.g. `Closes #12`)
-   - summarize what changed and why
+5. Reference related Issues when applicable
 
-**PRs should be narrow** (one topic per PR whenever possible).
-
-### Option C — Open-ended discussion
-Use **Discussions** for:
-- broad critiques not tied to a specific line/section
-- questions about the overall framework
-- “what about X?” explorations that may later become issues
+PRs should remain narrow and topic-bounded.
 
 ---
 
-## What happens after you submit feedback?
+### Option C — Open Dialogue (Discussions)
 
-- Issues are triaged and labeled (section, type, severity).
-- If the issue is actionable, it becomes either:
-  - a tracked revision task, or
-  - a PR request (by reviewer or maintainer).
-- Resolved issues are closed with a short rationale (even if rejected).
+Use Discussions for:
 
-The goal is **traceable evolution** of the document — not comment chaos.
+- broad conceptual debate
+- architectural questions
+- exploratory or speculative ideas
+- meta-level whitepaper feedback
 
----
-
-## Templates and labels
-
-Issue templates are located in:
-- `/.github/ISSUE_TEMPLATE/`
-
-Labels indicate:
-- which section is affected
-- whether the feedback is editorial vs conceptual vs technical
-- whether a PR is requested
+If discussion yields actionable feedback, convert it into an Issue.
 
 ---
 
-## Contribution norms (important)
+## What Happens After Feedback
+
+- Issues are reviewed and labeled
+- Actionable items may become revision tasks
+- PRs may be requested or submitted
+- Closed issues include rationale when appropriate
+
+The objective is **traceable document evolution**, not comment aggregation.
+
+---
+
+## Issue Templates
+
+Templates are located in:
+.github/ISSUE_TEMPLATE/
+
+
+They define the structured peer review categories:
+
+- **Critique** → constraint identification
+- **Revision** → adaptive improvement proposals
+
+Together they form a distributed feedback loop aligned with Integral’s FRS logic.
+
+---
+
+## Contribution Norms
 
 Please keep feedback:
-- **specific** (where, what, why)
-- **bounded** (one issue = one thread)
-- **good faith** (assume intent is clarity and rigor)
 
-If you think a claim is wrong:
-- say what would make it correct
-- or propose what evidence would be needed
+- specific (where, what, why)
+- bounded (one issue = one topic)
+- reasoned (evidence over assertion)
+- constructive when possible
+- good-faith and respectful
+
+Disagreement is expected and valuable. The aim is refinement, not consensus.
+
+---
+
+## Repository Structure
+whitepaper/ → full modular whitepaper
+assets/ → global diagrams and shared media
+.github/ISSUE_TEMPLATE → structured peer review templates
+README.md → repository overview
+
+
+---
+
+## Whitepaper Architecture
+
+The document progresses as a system narrative:
+
+1. Foundations (00–06)
+2. Subsystem architecture (07)
+3. Service example (08)
+4. Federation and scaling (09)
+5. Internodal reciprocity (10)
+6. Transition and implementation (11)
+
+This modularization supports:
+
+- granular review
+- stable citation
+- diff tracking
+- modular expansion
+- future software and website rendering
 
 ---
 
 ## Status
 
-- Whitepaper sections are now in GitHub-ready form.
-- Review is open and structured through Issues/PRs/Discussions.
+- Whitepaper conversion to GitHub is complete
+- Structured peer review is active
+- Ongoing refinement occurs through Issues and PRs
 
-If you want a starting point for review, begin with:
+Suggested starting points for reviewers:
+
 - `/whitepaper/00-abstract.md`
 - `/whitepaper/01-introduction.md`
 - `/whitepaper/05-the-5-core-subsystems.md`
 
-_____OLD___
-# Integral Whitepaper
-
-This repository contains the **GitHub-native technical whitepaper for Integral** — a federated, post-monetary, cybernetically coordinated cooperative economic system.
-
-The document presents:
-
-* conceptual foundations
-* subsystem architecture
-* module specifications
-* applied service examples
-* federation and scaling logic
-* internodal reciprocity mechanisms
-* transition and implementation pathways
-
 ---
 
-# 📘 Start Reading
+## Guiding Principle
 
-➡️ **Whitepaper entry point**
+This repository operationalizes a core Integral dynamic:
 
-```
-/whitepaper/README.md
-```
+> **Critique reveals constraints. Revision enables adaptation.**
 
----
-
-# Repository Structure
-
-```
-whitepaper/            → Full whitepaper (sectioned, reviewable)
-assets/                → Global diagrams and shared images
-.github/ISSUE_TEMPLATE → Peer review and revision templates
-README.md              → Repository overview (this file)
-```
-
----
-
-# Whitepaper Architecture
-
-The whitepaper is organized as a progressive system narrative:
-
-1. Foundations (00–06)
-2. Subsystem architecture (07)
-3. Worked example (08)
-4. Federation and scaling (09)
-5. Internodal reciprocity (10)
-6. Transition and implementation (11)
-
-This structure enables:
-
-* granular review
-* precise diff tracking
-* modular expansion
-* technical citation stability
-* future website and publication rendering
-
----
-
-# Peer Review Workflow
-
-This repository supports structured review through:
-
-### Issues
-
-Used for critique, questions, and conceptual discussion.
-
-### Pull Requests
-
-Used for proposed edits or structural changes.
-
-### Discussions
-
-Used for higher-level architectural dialogue.
-
-Templates for critique and revision are available in:
-
-```
-.github/ISSUE_TEMPLATE/
-```
-
----
-
-# Design Principles
-
-This repository is structured to prioritize:
-
-* transparency
-* modularity
-* reviewability
-* protocol clarity
-* non-linear navigation
-* long-term technical maintainability
-
----
-
-# Status
-
-This repository represents the actively maintained GitHub conversion of the Integral whitepaper and serves as the canonical technical reference for:
-
-* research
-* peer review
-* implementation scaffolding
-* public documentation
-* future software integration
+Through structured feedback, the whitepaper evolves as a distributed epistemic commons.
