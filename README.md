@@ -1,3 +1,13 @@
+NOTE:
+> **Want to contribute?** This project is currently in Phase 1 
+> development. All participation requires an approved application. 
+> Visit [integralcollective.io/application.html] to apply. 
+> Repositories are public for transparency — interaction is gated 
+> to approved contributors only.
+
+___
+
+
 # Integral Whitepaper (Peer Review Repository)
 
 This repository contains the **Integral technical whitepaper** — a federated, post-monetary, cybernetically coordinated cooperative economic system — structured as modular Markdown to enable transparent peer review, revision tracking, and distributed critique.
