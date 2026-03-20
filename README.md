@@ -12,7 +12,7 @@ ___
 
 This repository contains the **Integral technical whitepaper** — a federated, post-monetary, cybernetically coordinated cooperative economic system — structured as modular Markdown to enable transparent peer review, revision tracking, and distributed critique.
 
-[Download call PDF here: https://integralcollective.io/documents/whitepaper.html ]
+[Download full PDF here: https://integralcollective.io/documents/whitepaper.html ]
 
 The repository functions as a **living technical document**, evolving through structured feedback rather than static publication.
 
